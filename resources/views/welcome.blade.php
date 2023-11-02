@@ -38,19 +38,24 @@
 
 
     {{-- INSERIMENTO CARD --}}
+    
     <div class="container justify-content-center d-flex mt-5">
-        <div class="row m-5 ">
+      <div class="row m-5 ">
+          @foreach ($articles as $article)
             <div class="col-12 col-md-4">
                 <div class="card card " style="width: 18rem;">
                     <img src="https://picsum.photos/200" class="card-img-top" alt="immagini">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title">{{$article->titolo}}</h5>
+                      <p class="card-text">Categoria: {{$article->category->name}}</p>
+                      <p class="card-text">{{$article->prezzo}}</p>
+                      <p class="card-text">{{$article->descrizione}}</p>
+                      <a href="" class="btn btn-primary">Go somewhere</a>
                     </div>
                   </div>
                     
             </div>
+            @endforeach
         </div>
     </div>
 <div class="comtainer justify-content-center d-flex">
