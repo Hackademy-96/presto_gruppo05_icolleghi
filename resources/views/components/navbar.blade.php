@@ -10,7 +10,10 @@
             <a class="nav-link active" aria-current="page" href="/">HomePage</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Articoli</a>
+            <a class="nav-link active" href="#">Tutti gli Articoli</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Crea Articoli</a>
           </li>
         </ul>
         @guest
