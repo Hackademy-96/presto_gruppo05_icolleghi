@@ -26,6 +26,7 @@
                     <div class="mb-3">
                         <label for="disabledSelect" class="form-label">Categoria</label>
                         <select wire:model.defer="category" id="disabledSelect"  class="form-select">
+                          <option value="">Scegli una categoria</option>
                           @foreach ($categories as $category)
                               <option value="{{$category->id}}">{{$category->name}}</option>
                           @endforeach
@@ -38,7 +39,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="prezzo">Prezzo</label>
-                        <input type="number" class="form-control" placeholder="Inserisci il prezzo" id="prezzo" >
+                        <input type="number" wire:model.live="prezzo" class="form-control" placeholder="Inserisci il prezzo" id="prezzo" >
                     </div>
                     <button type="submit" class="btn btn-primary">Crea Annuncio</button>
                   </form>

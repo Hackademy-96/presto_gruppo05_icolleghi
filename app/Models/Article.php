@@ -11,11 +11,15 @@ class Article extends Model
         'titolo',
         'categoria',
         'descrizione',
-        'prezzo'
+        'prezzo',
     ];
 
     public function category(){
         return $this->belongsTo(Category::class);
+    }
+
+    public function user(){
+        return $this->belongsTo(User::class);
     }
 
 }
