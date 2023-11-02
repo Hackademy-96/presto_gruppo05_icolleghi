@@ -7,13 +7,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">HomePage</a>
+            <a class="nav-link active" aria-current="page" href="{{route('homePage')}}">HomePage</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Tutti gli Articoli</a>
+            <a class="nav-link active" href="#">Tutti gli Annunci</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Crea Articoli</a>
+            <a class="nav-link active" href="{{route('create_article')}}">Crea Annuncio</a>
           </li>
         </ul>
         @guest
