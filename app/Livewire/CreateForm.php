@@ -13,6 +13,10 @@ class CreateForm extends Component
     public $testo;
     public $prezzo;
 
+    public function updated($propertyName){
+        $this->validateOnly($propertyName);
+    }
+
     protected $rules=[
         'titolo'=> 'required|min:3',
         'category'=> 'required',
@@ -21,17 +25,31 @@ class CreateForm extends Component
         
     ];
 
-    public function store(){
+    protected $messages = [
+        'titolo.required'=> 'Il testo è obbligatorio',
+        'category.required'=> 'La Categoria è obbligatoria',
+        'descrizione.required'=>' ',
+    ];
 
-        $article= Article::create([
+    public function store(){
+        $category= Category::find(this->category);
+        $category->annoucements()->create([
+
             'titolo'=> $this->titolo,
-            'categoria'=> $this->categoria,
             'descrizione'=> $this->descrizione,
             'prezzo'=> $this->prezzo,
         ]);
-        
-
+        $this->cleanForm();
+        session()->flash('message', 'Articolo creato con successo!');
     }
+
+    public function cleanForm(){
+        $this->titolo= '';
+        $this->descrizione ='';
+        $this->prezzo = '';
+    }
+
+
     public function render()
     {
         return view('livewire.create-form');

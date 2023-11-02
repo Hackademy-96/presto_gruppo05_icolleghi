@@ -3,6 +3,20 @@
     <div class="container mt-5  mb-5">
         <div class="row justify-content-center">
             <div class="col-12 col-md-6">
+              @if (session('message'))
+              <div class="alert alert-success">
+                  {{ session('message') }}
+              </div>
+          @endif
+          @if ($errors->any())
+              <div class="alert alert-danger">
+                  <ul>
+                      @foreach ($errors->all() as $error)
+                          <li>{{ $error }}</li>
+                      @endforeach
+                  </ul>
+              </div>
+          @endif
                 <form wire:submit.prevent='store'>
                     @csrf
                     <div class="mb-3">
@@ -12,6 +26,9 @@
                     <div class="mb-3">
                         <label for="disabledSelect" class="form-label">Categoria</label>
                         <select wire:model.defer="category" id="disabledSelect"  class="form-select">
+                          @foreach ($categories as $category)
+                              <option value="{{$category->id}}">{{$category->name}}</option>
+                          @endforeach
                          
                         </select>
                       </div>
