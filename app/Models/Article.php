@@ -13,11 +13,9 @@ class Article extends Model
         'descrizione',
         'prezzo'
     ];
-    public function articles(){
-        return $this->belongsToMany(Article::class);
-    }
-    public function user(){
 
-        return $this->belongsTo(User::class);
+    public function category(){
+        return $this->belongsTo(Category::class);
     }
+
 }

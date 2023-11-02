@@ -8,14 +8,14 @@ use Livewire\Component;
 class CreateForm extends Component
 {
     public $titolo;
-    public $categoria;
+    public $category;
     public $descrizione;
     public $testo;
     public $prezzo;
 
     protected $rules=[
         'titolo'=> 'required|min:3',
-        'categoria'=> 'required',
+        'category'=> 'required',
         'descrizione'=> 'required|min:3',
         'prezzo'=> 'required|numeric',
         

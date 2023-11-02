@@ -11,18 +11,10 @@
                     </div>
                     <div class="mb-3">
                         <label for="disabledSelect" class="form-label">Categoria</label>
-                        <select id="disabledSelect" class="form-select">
-                          <option>Seleziona Categoria</option>
-                          <option></option>
-                          <option></option>
-                          <option></option>
-                          <option></option>
-                          <option></option>
-                          <option></option>
-                          <option></option>
-                          <option></option>
-                          <option></option>
-                          <option></option>
+                        <select wire:model.defer="category" id="disabledSelect"  class="form-select">
+                         @foreach ($categories as $category)
+                             <option value="{{$category->id}}">{{$category->name}}</option>
+                         @endforeach
                         </select>
                       </div>
                     <div class="mb-3">
