@@ -15,12 +15,13 @@
         </ul>
         @guest
             <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item">
+                    <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="{{route('register')}}">Registrati</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="{{route('login')}}">Accedi</a>
                     </li>
+            </ul>
         @endguest
         @auth
         <ul class="navbar-nav  mb-2 mb-lg-0">
