@@ -1,15 +1,8 @@
 <x-layout>
 
-
     {{-- TITOLO --}}
-    <div class="container m-5 justify-content-center d-flex">
-        <div class="row">
-            <div class="col-12">
-                <h1 class="text-center display-1">PROVA</h1>
-            </div>
-        </div>
-    </div>
-    
+    <h1 class="text-center display-1 m-5">PROVA</h1>
+
     {{-- INSERIMENTO CARD --}}
     <div class="container justify-content-center d-flex">
         <div class="row m-5 ">
