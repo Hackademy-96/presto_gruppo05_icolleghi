@@ -41,6 +41,10 @@
             </div>
         </div>
     </div>
+<div class="comtainer justify-content-center d-flex">
+  <button class="btn  btn-primary">Inserisci Annuncio</button>
+
+</div>
    
 </x-layout>
 
