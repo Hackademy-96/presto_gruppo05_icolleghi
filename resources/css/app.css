@@ -7,13 +7,13 @@
 }
 
 .navbar-scrolled{
-        background-color: rgba(250, 251, 255, 0.631)
+        background-color: rgba(250, 251, 255, 0.631);
         margin: 5vh 15vh;
     }
 
 /* MODIFICA TITLE */
-{
-}
+/* {
+} */
 /* MODIFICA CARD */
 .card{
     object-fit: cover;
