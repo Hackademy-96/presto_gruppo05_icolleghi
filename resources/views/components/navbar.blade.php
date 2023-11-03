@@ -12,6 +12,20 @@
           <li class="nav-item">
             <a class="nav-link active" href="#">Tutti gli Annunci</a>
           </li>
+
+          <div class="dropdown">
+          <li class="nav-item  dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Categorie
+            </a>
+            <ul class="dropdown-menu">
+              @foreach ($categories as $category)
+              <li><a class="dropdown-item text-center" href="{{route('categoryShow', compact('category'))}}">{{$category->name}}</a></li>
+              
+              @endforeach
+            </ul>
+          </div>
+
           <li class="nav-item">
             <a class="nav-link active" href="{{route('create_article')}}">Crea Annuncio</a>
           </li>
