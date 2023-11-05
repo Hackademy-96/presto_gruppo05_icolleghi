@@ -21,3 +21,7 @@ Route::get('/article/create', [ArticleController::class, 'create_article'])->mid
 
 Route::get('/categoria/{category}', [PublicController::class, 'categoryShow'])->name('categoryShow');
 
+Route::get('/dettaglio/annuncio/{article}', [ArticleController::class, 'showArticle'])->name('showArticle');
+
+Route::get('/index', [ArticleController::class, 'indexArticle'])->name('indexArticle');
+

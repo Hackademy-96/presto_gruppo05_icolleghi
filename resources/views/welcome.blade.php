@@ -50,7 +50,7 @@
                       <p class="card-text">Categoria: {{$article->category->name}}</p>
                       <p class="card-text">{{$article->prezzo}}</p>
                       <p class="card-text">{{$article->descrizione}}</p>
-                      <a href="" class="btn btn-primary">Go somewhere</a>
+                      <a href="{{route('showArticle', compact('article'))}}" class="btn btn-primary">Visualizza</a>
                     </div>
                   </div>
                     
