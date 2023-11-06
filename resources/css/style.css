@@ -1,0 +1,29 @@
+/* MODIFICA NAVBAR */
+.nav-custom{
+    background-color: #00b5ff;
+    transition:0.5s;
+    height: 80px;
+    border-radius: 40px;
+    margin: 5px;
+    box-shadow: 10px 10px 5px #bcbcbc;
+    
+}
+.navbar-scrolled{
+        background-color: rgba(250, 251, 255, 0.631);
+        margin: 5vh 15vh;
+        box-shadow: 10px 10px 5px #00b5ff;
+    }
+
+/* MODIFICA TITLE */
+/* {
+} */
+/* MODIFICA CARD */
+.card{
+    object-fit: cover;
+   
+}
+@media screen and (max-width:600px) {
+    .navbar-scrolled{
+        margin: 0;
+    }
+}

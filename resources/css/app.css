@@ -1,26 +1,3 @@
 @import 'bootstrap/dist/css/bootstrap.css';
+@import './style.css';
 
-/* MODIFICA NAVBAR */
-.nav-custom{
-    background-color: #00b5ff;
-    transition:0.5s;
-}
-
-.navbar-scrolled{
-        background-color: rgba(250, 251, 255, 0.631);
-        margin: 5vh 15vh;
-    }
-
-/* MODIFICA TITLE */
-/* {
-} */
-/* MODIFICA CARD */
-.card{
-    object-fit: cover;
-   
-}
-@media screen and (max-width:600px) {
-    .navbar-scrolled{
-        margin: 0;
-    }
-}
