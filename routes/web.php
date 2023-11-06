@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicController;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\RevisorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,4 +25,6 @@ Route::get('/categoria/{category}', [PublicController::class, 'categoryShow'])->
 Route::get('/dettaglio/annuncio/{article}', [ArticleController::class, 'showArticle'])->name('showArticle');
 
 Route::get('/index', [ArticleController::class, 'indexArticle'])->name('indexArticle');
+
+Route::get('/revisor/home', [RevisorController::class, 'index'])->name('indexRevisor');
 
