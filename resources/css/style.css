@@ -1,3 +1,7 @@
+body{
+    background-color: lightgray;
+}
+
 /* MODIFICA NAVBAR */
 :root{
     --colore-primario:var(rgb(35, 46, 62));
@@ -32,6 +36,16 @@
     object-fit: cover;
    
 }
+/* MODIFICA CATEGORIE */
+.categorie-bordo{
+    background-color: rgb(35, 46, 62);
+    padding: 5px;
+    box-shadow: 5px rgb(35, 46, 62);
+}
+.btn-bordo{
+    border-radius: 30px;
+}
+/* FINE MODIFICA CATEGORIE */
 .bg-card{
     background-color:  rgb(35, 46, 62);
 }
