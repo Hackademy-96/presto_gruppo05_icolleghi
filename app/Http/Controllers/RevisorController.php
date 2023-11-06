@@ -11,4 +11,14 @@ class RevisorController extends Controller
         $article_to_check = Article::where('is_accepted', null)->first();
         return view('revisor.index', compact('article_to_check'));
     }
+    
+    public function acceptArticle(Article $article){
+        $article = setAccepted(true);
+        return redirect()->back()->with('message', 'Complimenti, hai inserito l\'annuncio');    
+    }
+    
+    public function rejectArticle(Article $article){
+        $article = setAccepted(false);
+        return redirect()->back()->with('message', 'Complimenti, hai rifiutato l\'annuncio');    
+    }
 }

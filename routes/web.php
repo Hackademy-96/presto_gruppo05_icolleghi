@@ -28,3 +28,8 @@ Route::get('/index', [ArticleController::class, 'indexArticle'])->name('indexArt
 
 Route::get('/revisor/home', [RevisorController::class, 'index'])->name('indexRevisor');
 
+Route::patch('/accetta/annuncio/{article}', [RevisorController::class, 'acceptArticle'])->name('revisor.accept_article');
+
+Route::patch('/rifiuta/annuncio/{article}', [RevisorController::class, 'rejecttArticle'])->name('revisor.reject_article');
+
+
