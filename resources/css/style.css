@@ -1,19 +1,29 @@
 /* MODIFICA NAVBAR */
+:root{
+    --colore-primario:var(rgb(35, 46, 62));
+}
 .nav-custom{
-    background-color: #00b5ff;
+    background-color: rgb(35, 46, 62);
     transition:0.5s;
     height: 80px;
     border-radius: 40px;
     margin: 5px;
-    box-shadow: 10px 10px 5px #bcbcbc;
+    box-shadow: 5px 5px 5px #bcbcbc;
     
 }
 .navbar-scrolled{
-        background-color: rgba(250, 251, 255, 0.631);
+        background-color: rgb(35, 46, 62);
         margin: 5vh 15vh;
-        box-shadow: 10px 10px 5px #00b5ff;
+        box-shadow: 5px 5px 5px rgb(35, 46, 62);
     }
-
+.search-scrolled{
+    transition:0.5s;
+    display: none;
+}
+.search-design{
+    border: 1px solid rgb(35, 46, 62);
+    box-shadow: 5px 5px 5px rgb(35, 46, 62);
+}
 /* MODIFICA TITLE */
 /* {
 } */
@@ -22,8 +32,24 @@
     object-fit: cover;
    
 }
+.bg-card{
+    background-color:  rgb(35, 46, 62);
+}
 @media screen and (max-width:600px) {
     .navbar-scrolled{
         margin: 0;
     }
+}
+/* icone Navbar  */
+.icone-navbar{
+    height: 200px;
+}
+.bottone-logout{
+    background-color:  rgb(35, 46, 62);
+    color: white;
+}
+.carosello-home{
+    background-color: rgb(35, 46, 62);
+    padding: 5px;
+    box-shadow: 5px rgb(35, 46, 62);
 }
