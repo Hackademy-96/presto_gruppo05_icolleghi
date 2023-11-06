@@ -1,6 +1,7 @@
 <x-layout>
-    <div class="container ">
-        <div class="row mt-5 justify-content-center">
+    <div class="container rounded-5 bg-info-subtle rounded-top-0 shadow p-5  " style="margin-top: 120px">
+        <div class="row justify-content-center">
+            <h2 class="text-center display-4"><strong>Registrati</strong> </h2>
             <div class="col-md-6 col-12">
                 <form method="POST" action="{{route('register')}}">
                     @csrf
@@ -20,7 +21,7 @@
                         <label for="password_confirmation" class="form-label">Conferma Password</label>
                         <input type="password" name="password_confirmation" class="form-control" id="exampleInputPassword1">
                     </div>
-                    <button type="submit" class="btn btn-primary">Invia</button>
+                    <button type="submit" class="btn btn-success">Registrati</button>
                 </form> 
             </div>          
         </div>

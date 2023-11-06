@@ -75,7 +75,7 @@
                     <div class="card-body ">
                       <h5 class="card-title text-center">{{$article->titolo}}</h5>
                       <hr>
-                      <p class="card-text ">Categoria: {{$article->category->name}}</p>
+                      <p class="card-text ">Categoria: <strong>{{$article->category->name}}</strong></p>
                       <p class="card-text text-truncate">{{$article->descrizione}}</p>
                       <p class="card-text">€ {{$article->prezzo}}</p>
                       
@@ -84,7 +84,7 @@
                       </div>
                       <a href="{{route('showArticle', compact('article'))}}" class="btn btn-warning">Visualizza Articolo</a>
                     </div>
-                  </div>                 
+                </div>                 
             </div>
             @endforeach
         </div>
