@@ -49,7 +49,7 @@
             <div class=" mb-5 " style="width: 18rem;">
                 <img src="https://picsum.photos/200" class=" categorie-bordo card-img-top rounded-circle " alt="immagini">
                 <div class="card-body">
-                  <p class="m-4 fs-3 btn btn-warning justify-content-center d-flex text-center">{{$category->name}}</p>
+                  <a class="btn-bordo m-4 fs-3 btn btn-warning justify-content-center d-flex text-center" href="{{route('categoryShow', compact('category'))}}">{{$category->name}}</a>
                 </div>
               </div>                 
         </div>
@@ -61,30 +61,35 @@
 
 
     {{-- INSERIMENTO CARD --}}
-    
-    <div class="container bg-card p-2 shadow rounded-5 justify-content-center  mt-5 ">
+    <div class=" m-5 justify-content-center d-flex">
+      <a  class="btn fs-2 btn-outline-secondary"href="{{route('create_article')}}">Inserisci Annuncio</a>
+    </div>
+
+    <div class="container bg-card p-2 shadow rounded-5 justify-content-center   ">
       <div class="row m-5 ">
         <h1 class="text-center text-white mb-5">Ultimi Articoli</h1>
           @foreach ($articles as $article)
             <div class="col-12 col-md-4">
                 <div class="card card mb-5 " style="width: 18rem;">
                     <img src="https://picsum.photos/200" class="card-img-top" alt="immagini">
-                    <div class="card-body">
-                      <h5 class="card-title">{{$article->titolo}}</h5>
-                      <p class="card-text">Categoria: {{$article->category->name}}</p>
+                    <div class="card-body ">
+                      <h5 class="card-title text-center">{{$article->titolo}}</h5>
+                      <hr>
+                      <p class="card-text ">Categoria: {{$article->category->name}}</p>
+                      <p class="card-text text-truncate">{{$article->descrizione}}</p>
                       <p class="card-text">€ {{$article->prezzo}}</p>
-                      <p class="card-text">{{$article->descrizione}}</p>
-                      <a href="{{route('showArticle', compact('article'))}}" class="btn btn-primary">Visualizza</a>
+                      
+                      <div class="card-footer m-3 text-body-secondary">
+                        Pubblicato il: {{$article->created_at->format('d/m/y')}} <hr> - Autore: {{$article->user->name}}
+                      </div>
+                      <a href="{{route('showArticle', compact('article'))}}" class="btn btn-warning">Visualizza Articolo</a>
                     </div>
                   </div>                 
             </div>
             @endforeach
         </div>
     </div>
-<div class="container justify-content-center d-flex">
-  <button class="btn  btn-primary">Inserisci Annuncio</button>
 
-</div>
    
 </x-layout>
 
