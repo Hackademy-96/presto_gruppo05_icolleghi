@@ -49,7 +49,7 @@
             <div class=" mb-5 " style="width: 18rem;">
                 <img src="https://picsum.photos/200" class=" card-img-top rounded-circle" alt="immagini">
                 <div class="card-body">
-                  <p class="m-4 fs-3 btn btn-warning justify-content-center d-flex text-center">{{$category->name}}</p>
+                  <p class="m-4 fs-3 btn btn-warning  justify-content-center d-flex text-center">{{$category->name}}</p>
                 </div>
               </div>                 
         </div>
