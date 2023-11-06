@@ -12,7 +12,7 @@ class Article extends Model
         'categoria',
         'descrizione',
         'prezzo',
-    ];
+    ];  
 
     public function category(){
         return $this->belongsTo(Category::class);
@@ -20,6 +20,10 @@ class Article extends Model
 
     public function user(){
         return $this->belongsTo(User::class);
+    }
+
+    public static function toBeRevisionedCount(){
+        return Article::where('is_accepted', null)->count();
     }
 
 }

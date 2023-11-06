@@ -47,9 +47,15 @@
                Ciao {{Auth::user()->name}}
              </a>
              <ul class="dropdown-menu">
-               <li><a class="dropdown-item text-center" href="#">Profilo</a></li>
+              {{-- Revisore --}}
+               <li>
+                <a class="dropdown-item text-center" href="{{route('indexRevisor')}}">
+                  Zona revisore
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{App\Models\Article::toBeRevisionedCount()}}</span>
+                </a>
+              </li>
+               
               <li class="nav-item">
-
                 <form method="POST" class="justify-content-center d-flex" action="{{route('logout')}}">
                   @csrf
                   <button  class=" btn bottone-logout text-center ">Logout  <i class="fa-solid fa-right-from-bracket fa-beat"></i></button>
