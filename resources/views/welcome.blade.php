@@ -41,13 +41,13 @@
 
 {{-- Categorie  --}}
 
-<div class="container bg-body-tertiary p-2 shadow rounded-5 justify-content-center  mt-5 ">
+<div class=" container bg-body-tertiary p-2 shadow rounded-5 justify-content-center mt-5 ">
   <div class="row m-5 ">
     <h1 class="text-center mb-5">Categorie</h1>
       @foreach ($categories as $category)
         <div class="col-12 col-md-4">
             <div class=" mb-5 " style="width: 18rem;">
-                <img src="https://picsum.photos/200" class=" card-img-top rounded-circle" alt="immagini">
+                <img src="https://picsum.photos/200" class=" categorie-bordo card-img-top rounded-circle " alt="immagini">
                 <div class="card-body">
                   <p class="m-4 fs-3 btn btn-warning justify-content-center d-flex text-center">{{$category->name}}</p>
                 </div>
