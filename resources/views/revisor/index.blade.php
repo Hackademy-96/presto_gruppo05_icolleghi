@@ -50,7 +50,7 @@
                 @method('PATCH')
                 <button type="submit" class="btn btn-danger">Accetta</button>
                 </form>
-                <form action="{{route('revisor.reject_article', ['article'=>$article_to_ceck])}}" method="POST">
+                <form action="{{route('revisor.reject_article', ['article'=>$article_to_check])}}" method="POST">
                     @csrf
                     @method('PATCH')
                     <button class="btn btn-danger" type="submit">Rifiuta</button>
