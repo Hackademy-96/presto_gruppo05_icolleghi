@@ -15,7 +15,7 @@ let search= document.querySelector(".search-scrolled")
 
 window.addEventListener("scroll",()=>{
     // console.log(window.scrollY);
-
+    let search= document.querySelector(".search-scrolled")
 
     if (window.scrollY > 0) {
 

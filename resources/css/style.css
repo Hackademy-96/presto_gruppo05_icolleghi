@@ -1,14 +1,33 @@
 /* MODIFICA FOONTS */
-h1{
+.font-h1{
+  font-family: 'Kanit', sans-serif;
+ 
+  font-size: 100px;
+  font-weight: bold;
+  color:rgb(35, 46, 62);
+}
+
+.font-h2{
   font-family: 'Oswald', sans-serif;
   font-size: 100px;
   font-weight: bold;
   color:rgb(35, 46, 62);
 }
 
+.font-h5{
+  font-weight: bold;
+  color: #000;
+}
 
+.font-p{
+  color: #000;
+  font-size: 20px;
+}
 
-
+.visualizza-articolo{
+  color: black;
+  font-weight: bold;
+}
 
 body{
     background-color: lightgray;
@@ -53,12 +72,17 @@ footer{
 }
 /* MODIFICA CATEGORIE */
 .categorie-bordo{
-    background-color: rgb(35, 46, 62);
-    padding: 5px;
-    box-shadow: 5px rgb(35, 46, 62);
+    padding: 4px;
+    border: 3px solid rgb(35, 46, 62);
+    box-shadow: 5px 10px #888888;
 }
 .btn-bordo{
     border-radius: 30px;
+    border-color: rgb(35, 46, 62);
+    color: rgb(35, 46, 62);
+    font-size: 10px;
+    font-weight: bold;
+    
 }
 /* FINE MODIFICA CATEGORIE */
 .bg-card{
