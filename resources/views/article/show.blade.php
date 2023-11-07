@@ -1,20 +1,49 @@
 <x-layout>
-    <div class="container">
+    <div class="container  mb-5" style="margin-top: 120px">
         <div class="row m-5">
             <div class="col-6">
-                <h1>{{$article->titolo}}</h1>
-                <p>Prezzo: € {{$article->prezzo}}</p>
-                <p>Categoria: <a class="btn btn-danger" href="{{route('categoryShow',['category'=>$article->category])}}"> {{$article->category->name}}</a></p>
-                <p>{{$article->descrizione}}</p>
-
-
+                <div class="container me-5 shadow p-3 rounded-5 bg-body-secondary justify-content-center d-flex">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="display-4"><strong>{{$article->titolo}}</strong></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="container  p-5 colore-box rounded-5 mt-5">
+                    <p><strong>Categoria:</strong></p>  
+                    <p><a class="btn btn-success" href="{{route('categoryShow',['category'=>$article->category])}}"> {{$article->category->name}}</a></p></p>
+                    <p><strong>Descrizione prodotto:</strong> </p>
+                    <p> {{$article->descrizione}}</p>
+                    <p class="bottone-offerta">Sconto</p>
+                    <p>{{$article->prezzo}}€</p>
+                </div>
             </div>
             <div class="col-6">
-                <img src="https://picsum.photos/400" alt="">
+                <div id="carouselExampleFade" class="carousel ms-5 slide carousel-fade">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://picsum.photos/800" class="rounded-5 d-block w-100" alt="https://picsum.photos/800">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://picsum.photos/801" class="rounded-5 d-block w-100" alt="https://picsum.photos/801">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://picsum.photos/802" class="rounded-5 d-block w-100" alt="https://picsum.photos/802">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
-
-
-
+    
+    
+    
 </x-layout>

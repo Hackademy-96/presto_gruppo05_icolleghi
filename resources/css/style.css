@@ -67,6 +67,19 @@ footer{
 }
 .carosello-home{
     background-color: rgb(35, 46, 62);
-    padding: 5px;
-    box-shadow: 5px rgb(35, 46, 62);
+    height: 900px;
+    width: 100%;
+    
+}
+.bottone-offerta{
+    background-color: red;
+    color: white;
+    height: 23px;
+    width: 60px;
+    text-align: center;
+    border-radius: 10px;
+}
+.colore-box{
+    background-color: rgb(35, 46, 62) ;
+    color: white;
 }
