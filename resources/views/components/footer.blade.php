@@ -68,12 +68,12 @@
           <!-- Grid column -->
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">
+            <h5 class="text-uppercase fw-bold mb-4">
               Link Utili
-            </h6>
-            <p>
-              <a href="#!" class="text-reset">Privacy Policy</a>
-            </p>
+            </h5>
+            <h6>Vuoi lavorare con noi?</h6>
+            <p>Registrati e clicca qui</p>
+            <a href="become.revisor" class="btn btn-warning text-light shadow my-3 mt-0">Diventa revisore!</a>
             <p>
               <a href="#!" class="text-reset">Therms of Condition</a>
             </p>
@@ -91,11 +91,11 @@
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4">Contattaci</h6>
             <p><i class="fas fa-home me-3"></i> Italia | Puglia | Sicilia</p>
-            <p>
+            <p> 
               <i class="fas fa-envelope me-3"></i>
               icolleghi@info.com
             </p>
-            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+              <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
             <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
           </div>
           <!-- Grid column -->
