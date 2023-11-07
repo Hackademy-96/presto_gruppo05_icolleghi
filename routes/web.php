@@ -32,4 +32,7 @@ Route::patch('/accetta/annuncio/{article}', [RevisorController::class, 'acceptAr
 
 Route::patch('/rifiuta/annuncio/{article}', [RevisorController::class, 'rejectArticle'])->name('revisor.reject_article');
 
+// richiesta per diventare revisore 
+Route::get('/richiesta/revisore', [RevisorController::class, 'becomeRevisor'])->middleware('auth')->name('become.revisor');
+
 

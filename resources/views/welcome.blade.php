@@ -11,7 +11,7 @@
 </div>
   
 @if (session('access.denied'))
-              <div class="alert alert-success">
+              <div class="alert alert-danger">
                   {{ session('access.denied') }}
               </div>
     @endif

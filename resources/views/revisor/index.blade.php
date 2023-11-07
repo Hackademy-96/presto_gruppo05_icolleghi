@@ -12,6 +12,7 @@
               <div class="alert alert-success">
                   {{ session('message') }}
               </div>
+    @endif
     @if($article_to_check)
     <div class="container">
         <div class="row">
