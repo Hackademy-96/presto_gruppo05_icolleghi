@@ -2,8 +2,8 @@
   <div class="container mb-5 search-design  p-3 bg-body-secondary rounded-5 " style="margin-top: 120px;">
     <div class="row">
       <div class="col-md-12 ">
-        <form class="d-flex" role="search">
-          <input class="form-control  me-2" type="search" placeholder="Scrivi Qui la Tua Ricerca" aria-label="Search">
+        <form action="{{route('articles_search')}}" method="GET" class="d-flex" role="search">
+          <input name="searched" class="form-control  me-2" type="search" placeholder="Scrivi Qui la Tua Ricerca" aria-label="Search">
           <button class="btn btn-warning " type="submit"><i class="bi bi-search"></i></button>
         </form>
       </div>

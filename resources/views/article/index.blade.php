@@ -2,7 +2,7 @@
     <div class="container bg-card shadow rounded-5 justify-content-center" style="margin-top: 110px">
       <div class="row m-5 ">
         <h2 class="text-white display-4 m-5 text-center"> Tutti Gli Articoli</h2>
-        @foreach ($articles as $article)
+        @forelse ($articles as $article)
           <div class="col-12 col-md-4">
             <div class="card card mb-5 " style="width: 18rem;">
                   <img src="https://picsum.photos/200" class="card-img-top" alt="immagini">
@@ -20,7 +20,13 @@
                   </div>               
             </div>          
           </div>
-        @endforeach
+        @empty
+        <div class="col-12">
+            <div class="alert alert-warning py-3 shadow">
+              <p class="lead">Non ci sono annunci per questa ricerca.Prova a cambiare la ricerca</p>
+            </div>
+        </div>
+        @endforelse
         <div class="container justify-content-center d-flex">
           <div class="row">
             {{$articles->links()}}

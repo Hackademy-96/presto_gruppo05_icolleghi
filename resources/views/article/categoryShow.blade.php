@@ -18,7 +18,7 @@
                         <h5 class="card-title">{{$article->titolo}}</h5>
                         <p class="card-text">{{$article->prezzo}}€</p>
                         <p class="card-text">{{$article->descrizione}}</p>
-                        <a href="" class="btn mb-2 btn-warning">Visualizza Articolo</a>
+                        <a href="{{route('showArticle', compact('article'))}}" class="btn mb-2 btn-warning">Visualizza Articolo</a>
                         <p class="card-footer my-2">Pubblicato il: {{$article->created_at->format('d/m/y')}} - Autore: {{$article->user->name}}</p>
                       </div>
                     </div>
