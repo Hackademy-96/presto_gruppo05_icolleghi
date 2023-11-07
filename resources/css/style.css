@@ -1,7 +1,11 @@
 /* MODIFICA FOONTS */
 h1{
-
+  font-family: 'Oswald', sans-serif;
+  font-size: 100px;
+  font-weight: bold;
+  color:rgb(35, 46, 62);
 }
+
 
 
 

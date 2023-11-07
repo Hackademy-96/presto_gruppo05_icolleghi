@@ -1,5 +1,5 @@
 <x-layout>
-  <div class="container mb-5 search-design search-scrolled p-3 bg-body-secondary rounded-5 " style="margin-top: 120px">
+  <div class="container mb-5 search-design  p-3 bg-body-secondary rounded-5 " style="margin-top: 120px;">
     <div class="row">
       <div class="col-md-12 ">
         <form class="d-flex" role="search">
