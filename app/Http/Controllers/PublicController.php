@@ -10,11 +10,13 @@ use Illuminate\Http\Request;
 class PublicController extends Controller
 {
     public function homePage() {
-        $articles = Article::take(6)->get()->sortByDesc('created_at');
+       $articles = Article::where('is_accepted', true)->orderBy('created_at', 'DESC')->take(6)->get();
         return view('welcome', compact('articles'));
     }
 
     public function categoryShow(Category $category){
-        return view('article.categoryShow', compact('category'));
+        $category = Category::findOrFail($category->id);
+        $articles = $category->articles;
+        return view('article.categoryShow', compact('category', 'articles'));
     }
 }

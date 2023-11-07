@@ -13,12 +13,12 @@ class RevisorController extends Controller
     }
     
     public function acceptArticle(Article $article){
-        $article = setAccepted(true);
+        $article->setAccepted(true);
         return redirect()->back()->with('message', 'Complimenti, hai inserito l\'annuncio');    
     }
     
     public function rejectArticle(Article $article){
-        $article = setAccepted(false);
+        $article->setAccepted(false);
         return redirect()->back()->with('message', 'Complimenti, hai rifiutato l\'annuncio');    
     }
 }

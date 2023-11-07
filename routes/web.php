@@ -26,10 +26,10 @@ Route::get('/dettaglio/annuncio/{article}', [ArticleController::class, 'showArti
 
 Route::get('/index', [ArticleController::class, 'indexArticle'])->name('indexArticle');
 
-Route::get('/revisor/home', [RevisorController::class, 'index'])->name('indexRevisor');
+Route::get('/revisor/home', [RevisorController::class, 'index'])->middleware('isRevisor')->name('indexRevisor');
 
 Route::patch('/accetta/annuncio/{article}', [RevisorController::class, 'acceptArticle'])->name('revisor.accept_article');
 
-Route::patch('/rifiuta/annuncio/{article}', [RevisorController::class, 'rejecttArticle'])->name('revisor.reject_article');
+Route::patch('/rifiuta/annuncio/{article}', [RevisorController::class, 'rejectArticle'])->name('revisor.reject_article');
 
 
