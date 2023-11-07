@@ -10,11 +10,16 @@
   </div>
 </div>
   
+@if (session('access.denied'))
+              <div class="alert alert-success">
+                  {{ session('access.denied') }}
+              </div>
+    @endif
 
     {{-- INSERIMENTO CAROSELLO --}}
-    <div class="container-fluid mt-5">
+    <div class="container-fluid fixed carosello position-relative mt-5">
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 p-0">
           <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -23,49 +28,56 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="https://picsum.photos/800" height="700px" class="d-block w-100 carosello-home rounded-5 " alt="https://picsum.photos/800">
+                <img src="https://picsum.photos/800" class="d-block carosello-home img-fluid w-100 rounded-5 " alt="https://picsum.photos/800">
               </div>
               <div class="carousel-item">
-                <img src="https://picsum.photos/800" height="700px" class="d-block w-100 carosello-home rounded-5" alt="https://picsum.photos/800">
+                <img src="https://picsum.photos/801" class="d-block carosello-home img-fluid w-100 rounded-5" alt="https://picsum.photos/801">
               </div>
               <div class="carousel-item">
-                <img src="https://picsum.photos/800" height="700px" class="d-block w-100 carosello-home rounded-5" alt="https://picsum.photos/800">
+                <img src="https://picsum.photos/802" class="d-block carosello-home img-fluid w-100 rounded-5" alt="https://picsum.photos/802">
               </div>
             </div>           
           </div>
         </div>
       </div>
+              <div class=" container box-prodotti bg-body-tertiary p-2 shadow rounded-5 justify-content-center mt-5 ">
+          <div class="row m-5 ">
+            <h1 class="text-center mb-5">Categorie</h1>
+            @php $counter = 0 @endphp 
+              @foreach ($categories as $category)
+                <div class="col-12 col-md-4">
+                    <div class=" mb-5 " style="width: 18rem;">
+                        <img src="https://picsum.photos/20{{++$counter}}" class=" categorie-bordo card-img-top rounded-circle " alt="immagini">
+                        <div class="card-body">
+                          <a class="btn-bordo m-4 fs-3 btn btn-warning justify-content-center d-flex text-center" href="{{route('categoryShow', compact('category'))}}">{{$category->name}}</a>
+                        </div>
+                      </div>                 
+                </div>
+                @endforeach
+            </div>
+        </div>
     </div>
     
     {{-- FINE CAROSELLO --}}
 
 {{-- Categorie  --}}
 
-<div class=" container bg-body-tertiary p-2 shadow rounded-5 justify-content-center mt-5 ">
-  <div class="row m-5 ">
-    <h1 class="text-center mb-5">Categorie</h1>
-      @foreach ($categories as $category)
-        <div class="col-12 col-md-4">
-            <div class=" mb-5 " style="width: 18rem;">
-                <img src="https://picsum.photos/200" class=" categorie-bordo card-img-top rounded-circle " alt="immagini">
-                <div class="card-body">
-                  <a class="btn-bordo m-4 fs-3 btn btn-warning justify-content-center d-flex text-center" href="{{route('categoryShow', compact('category'))}}">{{$category->name}}</a>
-                </div>
-              </div>                 
-        </div>
-        @endforeach
-    </div>
-</div>
+
 
 {{-- fine Categorie  --}}
 
 
     {{-- INSERIMENTO CARD --}}
-    <div class=" m-5 justify-content-center d-flex">
-      <a  class="btn fs-2 btn-outline-secondary"href="{{route('create_article')}}">Inserisci Annuncio</a>
-    </div>
+    
 
     <div class="container bg-card p-2 shadow rounded-5 justify-content-center   ">
+      <div class="row">
+        <div class="col-12 ">
+            <div class=" m-5  justify-content-center d-flex">
+        <a  class="btn fs-2 btn-outline-secondary"href="{{route('create_article')}}">Inserisci Annuncio</a>
+      </div>
+        </div>
+      </div>
       <div class="row m-5 ">
         <h1 class="text-center text-white mb-5">Ultimi Articoli</h1>
           @foreach ($articles as $article)
