@@ -1,6 +1,6 @@
 <x-layout>
     <div class="container">
-        <div class="row">
+        <div class="row m-5">
             <div class="col-12">
                 <h1>
                     {{$article_to_check ? "Ecco l'annuncio da revisionare" : 'Non ci sono annunci da revisionare'}}
@@ -8,6 +8,10 @@
             </div>
         </div>
     </div>
+    @if (session('message'))
+              <div class="alert alert-success">
+                  {{ session('message') }}
+              </div>
     @if($article_to_check)
     <div class="container">
         <div class="row">

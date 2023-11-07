@@ -12,6 +12,6 @@ class Category extends Model
         'name',
     ];
     public function articles(){
-        return $this->hasMany(Article::class);
+        return $this->hasMany(Article::class)->where('is_accepted', true);
     }
 }
