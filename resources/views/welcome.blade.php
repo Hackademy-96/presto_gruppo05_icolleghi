@@ -42,7 +42,7 @@
       </div>
               <div class=" container box-prodotti bg-body-tertiary p-2 shadow rounded-5 justify-content-center mt-5 ">
           <div class="row m-5 ">
-            <h1 class="text-center mb-5">Categorie</h1>
+            <h1 class="text-center mb-5 font-h1 ">Categorie</h1>
             @php $counter = 0 @endphp 
               @foreach ($categories as $category)
                 <div class="col-12 col-md-4">

@@ -18,16 +18,16 @@
                         <h5 class="card-title">{{$article->titolo}}</h5>
                         <p class="card-text">{{$article->prezzo}}€</p>
                         <p class="card-text">{{$article->descrizione}}</p>
-                        <a href="" class="btn mb-2 btn-warning">Visualizza Articolo</a>
+                        <a href="" class="btn mb-2 btn-warning visualizza-articolo justify-content-center d-flex">Visualizza Articolo</a>
                         <p class="card-footer my-2">Pubblicato il: {{$article->created_at->format('d/m/y')}} - Autore: {{$article->user->name}}</p>
                       </div>
                     </div>
                       
               </div>
               @empty
-              <div class="col-12">
-                <h1>Non ci sono annunci in questa categoria</h1>
-                <h2>Pubblicane uno: <a class="btn btn-danger" href="{{route('create_article')}}">Nuovo Annuncio</a></h2>
+              <div class="col-12 text-center">
+                <h2 class="display-2">Non ci sono annunci in questa categoria</h2>
+                <p class="fs-4 mt-5 font-h1">Pubblicane uno: <a class="btn btn-danger" href="{{route('create_article')}}">Nuovo Annuncio</a></p>
               </div>
               @endforelse   
           </div>
