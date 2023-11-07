@@ -73,7 +73,7 @@
             </h5>
             <h6>Vuoi lavorare con noi?</h6>
             <p>Registrati e clicca qui</p>
-            <a href="become.revisor" class="btn btn-warning text-light shadow my-3 mt-0">Diventa revisore!</a>
+            <a href="{{route('become.revisor')}}" class="btn btn-warning text-light shadow my-3 mt-0">Diventa revisore!</a>
             <p>
               <a href="#!" class="text-reset">Therms of Condition</a>
             </p>

@@ -1,5 +1,8 @@
 import './bootstrap';
 import 'bootstrap/dist/js/bootstrap.js';
+import { register } from 'swiper/element/bundle';
+// register Swiper custom elements
+register();
 
 
 // NAVBAR 
@@ -39,19 +42,3 @@ window.addEventListener("scroll",()=>{
     }
 }
 )
-var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 10,
-    slidesPerView: 4,
-    freeMode: true,
-    watchSlidesProgress: true,
-  });
-  var swiper2 = new Swiper(".mySwiper2", {
-    spaceBetween: 10,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    thumbs: {
-      swiper: swiper,
-    },
-  });
