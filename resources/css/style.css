@@ -13,7 +13,12 @@
   font-weight: bold;
   color:rgb(35, 46, 62);
 }
-
+.navbar-toggler-icon{
+  background-color: white !important;
+}
+.navbar-toggler{
+  background-color: white !important;
+}
 .font-h5{
   font-weight: bold;
   color: #000;
@@ -43,7 +48,6 @@ footer{
 .nav-custom{
     background-color: rgb(35, 46, 62);
     transition:0.5s;
-    height: 80px;
     border-radius: 40px;
     margin: 5px;
     box-shadow: 5px 5px 5px #bcbcbc;
@@ -54,10 +58,7 @@ footer{
         margin: 5vh 15vh;
         box-shadow: 5px 5px 5px rgb(35, 46, 62);
     }
-.search-scrolled{
-    transition:0.5s;
-    display: none;
-}
+
 .search-design{
     border: 1px solid rgb(35, 46, 62);
     box-shadow: 5px 5px 5px rgb(35, 46, 62);

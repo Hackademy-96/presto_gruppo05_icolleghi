@@ -1,10 +1,10 @@
-<nav id="navbar" class="navbar nav-custom navbar-expand-lg fixed-top">
-    <div class="container-fluid  mb-2 mb-lg-0 ">
+<nav id="navbar" class="navbar  nav-custom navbar-expand-lg fixed-top">
+    <div class="container-fluid  ">
       <a class="navbar-brand text-white" href="#">iColleghi-Presto</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="navbar-toggler-icon text-white "></i>
       </button>
-      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <div class="collapse text-white navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
           <li class="nav-item ms-3" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Home">
             <a class=" nav-link hvr-underline-from-left text-white active" aria-placeholder="Home" aria-current="page" href="{{route('homePage')}}"><i  class="bi fs-4  bi-house-fill"></i></a>  
@@ -26,15 +26,29 @@
               @endforeach
             </ul>
           </div>
-
+          
           <li class="nav-item ms-3" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Crea Post">
             <a class="nav-link hvr-underline-from-left text-white active" href="{{route('create_article')}}"><i class="bi fs-4 bi-plus-square"></i></a>
           </li>
-          <li>
-            <x-_locale lang="it"></x-_locale>
-            <x-_locale lang="en"></x-_locale>
-            <x-_locale lang="es"></x-_locale>
-          </li>
+          
+          <div class="dropdown"data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Lingue">
+            <li class="nav-item ms-3 dropdown">
+              <a class="nav-link hvr-underline-from-left dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi fs-4 text-white bi bi-globe2"></i>
+              </a>
+                  <ul class="dropdown-menu">    
+                      <li class="justify-content-center d-flex dropdown-item hvr-trim">
+                          <x-_locale lang="it"></x-_locale>
+                      </li>  
+                      <li class="justify-content-center d-flex dropdown-item hvr-trim">
+                          <x-_locale lang="en"></x-_locale>
+                      </li>
+                      <li class="justify-content-center d-flex dropdown-item hvr-trim">
+                          <x-_locale lang="es"></x-_locale>
+                      </li> 
+                  </ul>
+            </div>
+          
         </ul>
         @guest
             <ul class="navbar-nav mb-2 mb-lg-0">
@@ -54,12 +68,16 @@
              </a>
              <ul class="dropdown-menu">
               {{-- Revisore --}}
-               <li>
+              @if (Auth::user()->is_revisor)
+                  <li>
                 <a class="dropdown-item text-center" href="{{route('indexRevisor')}}">
                   Zona revisore
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{App\Models\Article::toBeRevisionedCount()}}</span>
                 </a>
               </li>
+              @endif
+               
+              
                
               <li class="nav-item">
                 <form method="POST" class="justify-content-center d-flex" action="{{route('logout')}}">
