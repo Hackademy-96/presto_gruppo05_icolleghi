@@ -3,7 +3,7 @@
       <div class="row m-5 ">
         <h2 class="text-white display-4 m-5 text-center"> Tutti Gli Articoli</h2>
         @forelse ($articles as $article)
-          <div class="col-12 col-md-4">
+          <div class="col-12 hvr-float-shadow col-md-4">
             <div class="card card mb-5 " style="width: 18rem;">
                   <img src="https://picsum.photos/200" class="card-img-top" alt="immagini">
                   <div class="card-body ">
@@ -16,7 +16,7 @@
                       <div class="card-footer m-3 text-body-secondary">
                         Pubblicato il: {{$article->created_at->format('d/m/y')}} <hr> - Autore: {{$article->user->name}}
                       </div>
-                      <a href="{{route('showArticle', compact('article'))}}" class="btn btn-warning">Visualizza Articolo</a>
+                      <a href="{{route('showArticle', compact('article'))}}" class="btn hvr-forward btn-warning">Visualizza Articolo</a>
                   </div>               
             </div>          
           </div>

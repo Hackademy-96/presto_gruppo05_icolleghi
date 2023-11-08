@@ -28,13 +28,17 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="https://picsum.photos/800" class="d-block carosello-home img-fluid w-100 rounded-5 " alt="https://picsum.photos/800">
+                <img src="https://cdn.mos.cms.futurecdn.net/8E6totXLziTcHNNtStGadb.jpg" class="d-block carosello-home img-fluid w-100 rounded-5 " alt="https://picsum.photos/800">
               </div>
               <div class="carousel-item">
-                <img src="https://picsum.photos/801" class="d-block carosello-home img-fluid w-100 rounded-5" alt="https://picsum.photos/801">
+                <img src="https://www.dexerto.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://editors.dexerto.com/wp-content/uploads/2022/11/28/cm-aorus.jpg" class="d-block carosello-home img-fluid w-100 rounded-5" alt="https://picsum.photos/801">
               </div>
               <div class="carousel-item">
-                <img src="https://picsum.photos/802" class="d-block carosello-home img-fluid w-100 rounded-5" alt="https://picsum.photos/802">
+                <img src="https://cdn.zoomg.ir/2021/1/spider-man-far-from-home-mysterio-inside-illusion-machine.jpg" class="d-block carosello-home img-fluid w-100 rounded-5" alt="https://picsum.photos/802">
+                <div class="bg-danger rounded-5 shadow carousel-caption d-none d-md-block">
+                  <h5>Il gioco dell'Anno!</h5>
+                  <p>Disponibile gratuitamente su tutte le console.</p>
+                </div>
               </div>
             </div>           
           </div>
@@ -44,17 +48,27 @@
         <div class=" container box-prodotti bg-body-tertiary p-2 shadow rounded-5 justify-content-center mt-5 ">
           <div class="row m-5 ">
             <h1 class="text-center mb-5 font-h1 ">Categorie</h1>
-            @php $counter = 0 @endphp 
-              @foreach ($categories as $category)
-                <div class="col-12 col-md-4">
-                    <div class=" mb-5 " style="width: 18rem;">
-                        <img src="https://picsum.photos/20{{++$counter}}" class=" categorie-bordo card-img-top rounded-circle " alt="immagini">
-                        <div class="card-body">
-                          <a class="btn-bordo m-4 fs-3 btn btn-warning justify-content-center d-flex text-center" href="{{route('categoryShow', compact('category'))}}">{{$category->name}}</a>
-                        </div>
-                      </div>                 
+                @php $counter = 0 @endphp 
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    @foreach ($categories as $category)
+                    <div class="swiper-slide">
+                      <div class="col-12 col-md-4">
+                        <div class=" mb-5 " style="width: 18rem;">
+                            <img src="https://picsum.photos/20{{++$counter}}" class=" categorie-bordo card-img-top rounded-circle " alt="immagini">
+                            <div class="card-body">
+                              <a class="btn-bordo m-4 fs-3 btn hvr-float-shadow btn-warning justify-content-center d-flex text-center" href="{{route('categoryShow', compact('category'))}}">{{$category->name}}</a>
+                            </div>
+                        </div>                 
+                    </div> 
+                    </div>
+                    @endforeach
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
                 </div>
-                @endforeach
+                
+                
             </div>
         </div>
         {{-- fine Categorie  --}}
@@ -69,14 +83,14 @@
       <div class="row">
         <div class="col-12 ">
             <div class=" m-5  justify-content-center d-flex">
-        <a  class="btn fs-2 btn-outline-secondary"href="{{route('create_article')}}">Inserisci Annuncio</a>
+        <a  class="fs-2 btn btn-dark hvr-bounce-to-right"href="{{route('create_article')}}">Inserisci Annuncio</a>
       </div>
         </div>
       </div>
       <div class="row m-5 ">
         <h1 class="text-center text-white mb-5">Ultimi Articoli</h1>
-          @foreach ($articles as $article)
-            <div class="col-12 col-md-4">
+           @foreach ($articles as $article)
+            <div class="col-12 hvr-float-shadow col-md-4">
               <x-carosello-card :article="$article" :index="$loop->index"/>      
             </div>
             @endforeach

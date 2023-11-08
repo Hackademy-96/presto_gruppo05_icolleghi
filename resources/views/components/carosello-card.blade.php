@@ -76,7 +76,7 @@
       <div class="card-footer m-3 text-body-secondary">
         Pubblicato il: {{$article->created_at->format('d/m/y')}} <hr> - Autore: {{$article->user->name}}
       </div>
-      <a href="{{route('showArticle', compact('article'))}}" class="btn btn-warning">Visualizza Articolo</a>
+      <a href="{{route('showArticle', compact('article'))}}" class="btn hvr-forward btn-warning">Visualizza Articolo</a>
     </div>
 </div>   
 
