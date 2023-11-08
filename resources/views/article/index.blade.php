@@ -3,7 +3,7 @@
       <div class="row m-5 ">
         <h2 class="text-white display-4 m-5 text-center"> Tutti Gli Articoli</h2>
         @forelse ($articles as $article)
-          <div class="col-12 hvr-float-shadow col-md-4">
+          <div class="col-12 justify-content-center d-flex hvr-float-shadow col-md-4">
             <div class="card card mb-5 " style="width: 18rem;">
                   <img src="https://picsum.photos/200" class="card-img-top" alt="immagini">
                   <div class="card-body ">
