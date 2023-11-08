@@ -1,5 +1,5 @@
 <nav id="navbar" class="navbar nav-custom navbar-expand-lg fixed-top">
-    <div class="container-fluid ">
+    <div class="container-fluid  mb-2 mb-lg-0 ">
       <a class="navbar-brand text-white" href="#">iColleghi-Presto</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
