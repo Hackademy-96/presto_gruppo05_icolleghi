@@ -1,9 +1,12 @@
 import './bootstrap';
+import bootstrap from 'bootstrap/dist/js/bootstrap.js'
 import 'bootstrap/dist/js/bootstrap.js';
 import { register } from 'swiper/element/bundle';
 // register Swiper custom elements
 register();
 
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 // NAVBAR 
 //USARE L'OGGETTO "SCROLL"
@@ -50,7 +53,6 @@ var swiper = new Swiper('.swiper', {
     return direction;
   }
 
-//   swiper ultimi annunci 
-
+// bottoni navbar 
 
 

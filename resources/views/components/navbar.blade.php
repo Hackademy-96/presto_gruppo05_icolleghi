@@ -6,14 +6,15 @@
       </button>
       <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
-          <li class="nav-item ms-3">
-            <a class=" nav-link hvr-underline-from-left text-white active" aria-current="page" href="{{route('homePage')}}"><i class="bi fs-4  bi-house-fill"></i></a>
+          <li class="nav-item ms-3" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Home">
+            <a class=" nav-link hvr-underline-from-left text-white active" aria-placeholder="Home" aria-current="page" href="{{route('homePage')}}"><i  class="bi fs-4  bi-house-fill"></i></a>  
           </li>
-          <li class="nav-item ms-3">
+
+          <li class="nav-item ms-3"data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tutti i Post">
             <a class="nav-link hvr-underline-from-left text-white active" href="{{route('indexArticle')}}"><i class="bi fs-4 bi-file-post"></i></a>
           </li>
 
-          <div class="dropdown">
+          <div class="dropdown"data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Categorie">
           <li class="nav-item ms-3 dropdown">
             <a class="nav-link hvr-underline-from-left dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="bi fs-4 text-white bi-three-dots"></i>
@@ -26,7 +27,7 @@
             </ul>
           </div>
 
-          <li class="nav-item ms-3">
+          <li class="nav-item ms-3" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Crea Post">
             <a class="nav-link hvr-underline-from-left text-white active" href="{{route('create_article')}}"><i class="bi fs-4 bi-plus-square"></i></a>
           </li>
         </ul>
@@ -85,4 +86,5 @@
       </div>
     </div>
   </nav>
+  
   
