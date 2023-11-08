@@ -49,4 +49,7 @@ Route::get('/rendi/revisore/{user}', [RevisorController::class, 'makeRevisor'])-
 // ricerca annuncio 
 Route::get('/ricerca/annuncio', [PublicController::class, 'searchArticles'])->name('articles_search');
 
+// cambia lingua 
+Route::get('/lingua/{lang}', [PublicController::class, 'setLanguage'])->name('setLocale');
+
 

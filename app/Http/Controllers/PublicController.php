@@ -24,4 +24,10 @@ class PublicController extends Controller
         $articles = Article::search($request->searched)->where('is_accepted', true)->paginate(10); 
         return view('article.index', compact('articles'));
     }
+
+    public function setLanguage($lang){
+
+        session()->put('locale', $lang);
+        return redirect()->back();
+    }
 }

@@ -30,6 +30,11 @@
           <li class="nav-item ms-3" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Crea Post">
             <a class="nav-link hvr-underline-from-left text-white active" href="{{route('create_article')}}"><i class="bi fs-4 bi-plus-square"></i></a>
           </li>
+          <li>
+            <x-_locale lang="it"></x-_locale>
+            <x-_locale lang="en"></x-_locale>
+            <x-_locale lang="es"></x-_locale>
+          </li>
         </ul>
         @guest
             <ul class="navbar-nav mb-2 mb-lg-0">
