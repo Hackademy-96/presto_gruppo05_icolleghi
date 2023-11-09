@@ -1,6 +1,6 @@
 <nav id="navbar" class="navbar  nav-custom navbar-expand-lg fixed-top">
     <div class="container-fluid  ">
-      <a class="navbar-brand text-white" href="{{route('homePage')}}"><img class="logo" src="{{Storage::url('public/img/logo/logo-principale.jpg')}}" alt="logo"></a>
+      <a class="navbar-brand text-white" href="{{route('homePage')}}"><img class="logo" src="/img/colleghi.jpg" alt="logo"></a>
       <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="navbar-toggler-icon text-white "></i>
       </button>
