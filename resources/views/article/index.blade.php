@@ -1,9 +1,13 @@
 <x-layout>
-    <div class="container bg-card shadow rounded-5 justify-content-center" style="margin-top: 110px">
+    <div class="container bg-card shadow rounded-5 justify-content-center" style="margin-top: 110px" data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
       <div class="row m-5 ">
-        <h2 class="text-white display-4 m-5 text-center"> Tutti Gli Articoli</h2>
+        <h2 class="text-white display-4 mt-5 mb-5 text-center"> Tutti Gli Articoli</h2>
         @forelse ($articles as $article)
-          <div class="col-12 justify-content-center d-flex hvr-float-shadow col-md-4">
+          <div class="col-md-8 col-lg-8 col-xl-4 mx-auto mb-4 justify-content-center d-flex hvr-float-shadow " data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
             <div class="card card mb-5 " style="width: 18rem;">
                   <img src="https://picsum.photos/200" class="card-img-top" alt="immagini">
                   <div class="card-body ">
@@ -21,7 +25,7 @@
             </div>          
           </div>
         @empty
-        <div class="col-12">
+        <div class="col-md-8 col-lg-8 col-xl-8 mx-auto mb-4">
             <div class="alert alert-warning py-3 shadow">
               <p class="lead">Non ci sono annunci per questa ricerca.Prova a cambiare la ricerca</p>
             </div>

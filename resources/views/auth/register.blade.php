@@ -1,7 +1,21 @@
 <x-layout>
-    <div class="container rounded-5  rounded-top-0 shadow p-5  " style="margin-top: 120px">
-        <div class="row justify-content-center">
-            <h2 class="text-center display-4"><strong>Registrati</strong> </h2>
+
+<div style="background-color: rgb(35, 46, 62)" class="m-3 rounded-5">
+    {{-- logo  --}}
+
+    <div class="container" style="margin-top: 120px">
+        <div class="row">
+            <div class="col-12 justify-content-center d-flex">
+                <img class="logo-extend" src="{{Storage::url('public/img/logo/logo-principale.jpg')}}" alt="logo">
+            </div>
+        </div>
+    </div>
+
+
+    {{-- form  --}}
+    <div class="container rounded-5 rounded-5 shadow bg-body-secondary w-75  ">
+        <div class="row justify-content-center ">
+            <h2 class="text-center mb-5 mt-3 display-4"><strong>Registrati</strong> </h2>
             <div class="col-md-8 col-lg-8 col-xl-8 mx-auto mb-4">
                 <form method="POST" action="{{route('register')}}">
                     @csrf
@@ -31,12 +45,13 @@
     </div>   
     <div class="container mt-5">
         <div class="row">
-            <div class="col-12 justify-content-center d-flex">    
+            <div class="col-12 mb-5 justify-content-center d-flex">    
                 <div class="justify-content-center d-flex flex-column">
-                    <h3>Hai già un Account?</h3>
-                    <a href="{{route('register')}}" class="btn btn-warning">Accedi</a>
+                    <h3 class="text-white mb-4">Hai già un Account?</h3>
+                    <a href="{{route('login')}}" class="btn btn-warning">Accedi</a>
                 </div>
             </div>
         </div>
-    </div>    
+    </div> 
+</div>   
 </x-layout>

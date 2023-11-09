@@ -13,6 +13,14 @@
   font-weight: bold;
   color:rgb(35, 46, 62);
 }
+.logo{
+  height: 60px;
+  width: 50px;
+  margin-left: 10px;
+}
+.logo-extend{
+  height: 300px;
+}
 .navbar-toggler-icon{
   background-color: white !important;
 }
@@ -47,16 +55,24 @@ footer{
 }
 .nav-custom{
     background-color: rgb(35, 46, 62);
-    transition:0.5s;
-    border-radius: 40px;
-    margin: 5px;
-    box-shadow: 5px 5px 5px #bcbcbc;
+   transition:0.5s;
+   border-radius: 40px;
+   margin: 5px;
+   box-shadow: 5px 5px 5px #bcbcbc;
+   
+   
+      
+     
+  }
+  
     
-}
+
 .navbar-scrolled{
-        background-color: rgb(35, 46, 62);
+        background-color: rgba(35, 46, 62, 0.597);
+        border: 2px solid  rgb(255, 193, 9);
         margin: 5vh 15vh;
         box-shadow: 5px 5px 5px rgb(35, 46, 62);
+        backdrop-filter: blur(8px);
     }
 
 .search-design{

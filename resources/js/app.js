@@ -32,6 +32,7 @@ window.addEventListener("scroll",()=>{
 )
 
 // swiper Categorie 
+
 var swiper = new Swiper('.swiper', {
     slidesPerView: 3,
     direction: getDirection(),
@@ -52,7 +53,6 @@ var swiper = new Swiper('.swiper', {
 
     return direction;
   }
-
 // bottoni navbar 
 
 

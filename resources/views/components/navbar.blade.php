@@ -1,20 +1,26 @@
 <nav id="navbar" class="navbar  nav-custom navbar-expand-lg fixed-top">
     <div class="container-fluid  ">
-      <a class="navbar-brand text-white" href="#">iColleghi-Presto</a>
+      <a class="navbar-brand text-white" href="{{route('homePage')}}"><img class="logo" src="{{Storage::url('public/img/logo/logo-principale.jpg')}}" alt="logo"></a>
       <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="navbar-toggler-icon text-white "></i>
       </button>
       <div class="collapse text-white navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
-          <li class="nav-item ms-3" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Home">
+          <li class="nav-item ms-3" data-bs-toggle="tooltip" data-bs-placement="bottom" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" data-bs-title="Home">
             <a class=" nav-link hvr-underline-from-left text-white active" aria-placeholder="Home" aria-current="page" href="{{route('homePage')}}"><i  class="bi fs-4  bi-house-fill"></i></a>  
           </li>
 
-          <li class="nav-item ms-3"data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tutti i Post">
+          <li class="nav-item ms-3"data-bs-toggle="tooltip" data-bs-placement="bottom" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" data-bs-title="Tutti i Post">
             <a class="nav-link hvr-underline-from-left text-white active" href="{{route('indexArticle')}}"><i class="bi fs-4 bi-file-post"></i></a>
           </li>
 
-          <div class="dropdown"data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Categorie">
+          <div class="dropdown"data-bs-toggle="tooltip" data-bs-placement="bottom" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" data-bs-title="Categorie">
           <li class="nav-item ms-3 dropdown">
             <a class="nav-link hvr-underline-from-left dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="bi fs-4 text-white bi-three-dots"></i>
@@ -27,11 +33,15 @@
             </ul>
           </div>
           
-          <li class="nav-item ms-3" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Crea Post">
+          <li class="nav-item ms-3" data-bs-toggle="tooltip" data-bs-placement="bottom" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" data-bs-title="Crea Post">
             <a class="nav-link hvr-underline-from-left text-white active" href="{{route('create_article')}}"><i class="bi fs-4 bi-plus-square"></i></a>
           </li>
           
-          <div class="dropdown"data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Lingue">
+          <div class="dropdown"data-bs-toggle="tooltip" data-bs-placement="bottom" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" data-bs-title="Lingue">
             <li class="nav-item ms-3 dropdown">
               <a class="nav-link hvr-underline-from-left dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="bi fs-4 text-white bi bi-globe2"></i>
