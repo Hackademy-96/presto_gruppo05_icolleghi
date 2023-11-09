@@ -17,7 +17,7 @@
     @endif
 
     {{-- INSERIMENTO CAROSELLO --}}
-    <div class="container-fluid carosello mt-5"data-aos="fade-right"
+    {{-- <div class="container-fluid carosello mt-5"data-aos="fade-right"
     data-aos-offset="300"
     data-aos-easing="ease-in-sine">
       <div class="row">
@@ -45,19 +45,44 @@
             </div>           
           </div>
         </div>
+      </div> --}}
+
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner carousel-inner col-md-8 col-lg-8 col-xl-8 mx-auto mb-4">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="https://cdn.mos.cms.futurecdn.net/8E6totXLziTcHNNtStGadb.jpg" class="d-block immagini-carosello carosello-home img-fluid w-100 rounded-5 " alt="https://picsum.photos/800">
+          </div>
+          <div class="carousel-item col-md-8 col-lg-8 col-xl-8 mx-auto mb-4" data-bs-interval="3000">
+            <img src="https://www.dexerto.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://editors.dexerto.com/wp-content/uploads/2022/11/28/cm-aorus.jpg" class="d-block carosello-home img-fluid w-100 rounded-5" alt="https://picsum.photos/801">
+          </div>
+          <div class="carousel-item col-md-8 col-lg-8 col-xl-8 mx-auto mb-4" data-bs-interval="3000">
+            <img src="https://cdn.zoomg.ir/2021/1/spider-man-far-from-home-mysterio-inside-illusion-machine.jpg" class="d-block carosello-home img-fluid w-100 rounded-5" alt="https://picsum.photos/802">
+          </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+
       {{-- Categorie   d-md-block --}}
         <div class=" container d-none d-md-block mb-5 box-prodotti bg-body-tertiary p-2 shadow rounded-5 justify-content-center mt-5 ">
           <div class="row m-5 ">
-            <h1 class="text-center mb-5 display-4 ">Categorie</h1>
-                @php $counter = 0 @endphp 
+            <h1 class="text-center font-h1 mb-5 display-4 ">Categorie</h1>
                 <div class="swiper">
                   <div class="swiper-wrapper">
                     @foreach ($categories as $category)
                     <div class="swiper-slide">
-                      <div class="col-12 col-md-8 col-sm-8">
+                      <div class="col-12 col-md-8 col-sm-8"data-aos="fade-right"
+                      data-aos-offset="300"
+                      data-aos-easing="ease-in-sine">
                         <div class=" mb-5 " >
-                            <img src="https://picsum.photos/20{{++$counter}}" class=" categorie-bordo card-img-top rounded-circle " alt="immagini">
+                            <img src="{{$category->img}}" class="categorie-bordo card-img-top hvr-float-shadow rounded-5"  alt="immagini">
                             <div class="card-body">
                               <a class="btn-bordo m-4 fs-3 btn hvr-float-shadow btn-warning justify-content-center d-flex text-center" href="{{route('categoryShow', compact('category'))}}">{{$category->name}}</a>
                             </div>
@@ -80,27 +105,14 @@
           data-aos-easing="ease-in-sine">
       <div class="row m-5 ">
         <div class="col-12">
-          <h1 class="text-center text-white mb-5 display-4 ">Categorie</h1>
+          <h1 class="text-center font-h1 text-white mb-5 display-4 ">Categorie</h1>
         </div>
-        {{-- @foreach ($categories as $category) --}}
-                    {{-- <div class="swiper-slide">
-                      <div class="col-md-8 col-lg-8 col-xl-4 mx-auto mb-4">
-                        <div class=" mb-5 " >
-                            <img src="https://picsum.photos/20{{++$counter}}" class=" categorie-bordo fs-5 card-img-top rounded-circle " alt="immagini">
-                            <div class="card-body">
-                              <a class="btn-bordo m-4 fs-3 btn hvr-float-shadow btn-warning justify-content-center d-flex text-center" href="{{route('categoryShow', compact('category'))}}">{{$category->name}}</a>
-                            </div>
-                        </div>                 
-                      </div> 
-                    </div> --}}
-          {{-- @endforeach   --}}
-          
           <div class="col-12">
             <div id="carouselExample" class="carousel slide">
               <div class="carousel-inner ">
                 @foreach ($categories as $category)
                 <div class="carousel-item @if($loop->first) active @endif" >
-                  <img src="https://picsum.photos/20{{++$counter}}" class=" categorie-bordo fs-5 card-img-top rounded-circle " alt="immagini">
+                  <img src="{{$category->img}}" class=" categorie-bordo-phone fs-5 card-img-top rounded-5 " alt="immagini">
                   <div class="card-body">
                     <a class="btn-bordo m-4 fs-3 btn hvr-float-shadow btn-warning justify-content-center d-flex text-center" href="{{route('categoryShow', compact('category'))}}">{{$category->name}}</a>
                   </div>
