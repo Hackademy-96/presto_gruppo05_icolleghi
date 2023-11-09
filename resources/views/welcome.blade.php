@@ -1,4 +1,4 @@
-<x-layout>
+<x-layout >
   <div class="container mb-5 search-design  p-3 bg-body-secondary rounded-5 " style="margin-top: 100px;">
     <div class="row">
       <div class="col-md-12 ">
@@ -17,7 +17,9 @@
     @endif
 
     {{-- INSERIMENTO CAROSELLO --}}
-    <div class="container-fluid carosello mt-5">
+    <div class="container-fluid carosello mt-5"data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
       <div class="row">
         <div class=" col-12 ">
           <div id="carouselExampleIndicators" class="carousel slide">
@@ -45,9 +47,9 @@
         </div>
       </div>
       {{-- Categorie   d-md-block --}}
-        <div class="d-none container box-prodotti bg-body-tertiary p-2 shadow rounded-5 justify-content-center mt-5 ">
+        <div class=" container  mb-5 box-prodotti bg-body-tertiary p-2 shadow rounded-5 justify-content-center mt-5 ">
           <div class="row m-5 ">
-            <h1 class="text-center mb-5 display- ">Categorie</h1>
+            <h1 class="text-center mb-5 display-4 ">Categorie</h1>
                 @php $counter = 0 @endphp 
                 <div class="swiper">
                   <div class="swiper-wrapper">
@@ -71,17 +73,40 @@
                 
             </div>
         </div>
-        {{-- fine Categorie  --}}
-        </div>
-    
+        {{-- fine Categorie Dispositivi grandi --}}
+      {{-- Inizio Categorie Dispositivi Piccoli --}}
+  <div class="container  mb-5 bg-card shadow rounded-5 justify-content-center" style="margin-top: 110px" data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
+      <div class="row m-5 ">
+        <h1 class="text-center text-white mb-5 display-4 ">Categorie</h1>>
+        @foreach ($categories as $category)
+                    <div class="swiper-slide">
+                      <div class="col-md-8 col-lg-8 col-xl-4 mx-auto mb-4">
+                        <div class=" mb-5 " >
+                            <img src="https://picsum.photos/20{{++$counter}}" class=" categorie-bordo card-img-top rounded-circle " alt="immagini">
+                            <div class="card-body">
+                              <a class="btn-bordo m-4 fs-3 btn hvr-float-shadow btn-warning justify-content-center d-flex text-center" href="{{route('categoryShow', compact('category'))}}">{{$category->name}}</a>
+                            </div>
+                        </div>                 
+                      </div> 
+                    </div>
+          @endforeach  
+    </div>  
+  </div>
+
+      {{-- fine Categorie dispositivi piccoli  --}}
     {{-- FINE CAROSELLO --}}
 
     {{-- INSERIMENTO CARD --}}
     
 
-    <div class="container bg-card p-2 shadow rounded-5    ">
+    <div class="container bg-card p-2 shadow rounded-5" data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
       <div class="row justify-content-center">
-        <div class="col-12">
+        <div class="col-12 "data-aos="fade-up"
+        data-aos-anchor-placement="bottom-center">
             <div class=" m-5  justify-content-center d-flex">
         <a  class="fs-2 btn btn-dark hvr-bounce-to-right"href="{{route('create_article')}}">Inserisci Annuncio</a>
       </div>
@@ -90,11 +115,11 @@
       <div class="row m-5">
         <h1 class="text-center text-white mb-5">Ultimi Articoli</h1>
            @foreach ($articles as $article)
-            <div class="col-12 justify-content-center d-flex hvr-float-shadow col-md-4">
+            <div class="col-12 justify-content-center d-flex hvr-float-shadow col-md-4"data-aos="zoom-in-left">
               <x-carosello-card :article="$article" :index="$loop->index"/>      
             </div>
             @endforeach
-        </div>
+      </div>
     </div>
 
    
