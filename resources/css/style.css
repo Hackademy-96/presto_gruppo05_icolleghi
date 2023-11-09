@@ -390,3 +390,8 @@ body {
     transform: rotate(90deg);
   }
 }
+
+.img-preview{
+  height: 100px;
+  width: 100px;
+}
