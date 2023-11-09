@@ -68,6 +68,7 @@ class CreateForm extends Component
 
 
     public function store(){
+        $this->validate();
         $category= Category::find($this->category);
        $article= $category->articles()->create([
 
@@ -75,8 +76,7 @@ class CreateForm extends Component
             'descrizione'=> $this->descrizione,
             'prezzo'=> $this->prezzo,
         ]);
-        $this->validate();
-        $this->article = Category::find($this->category)->annoucements()->create($this->validate());      
+        $this->article = Category::find($this->category)->articles()->create($this->validate());      
         if (count($this->images)) {
             foreach ($this->images as $image){
                 $this->anrticle->images()->create(['path'=>$image->store('images' , 'public')]);
