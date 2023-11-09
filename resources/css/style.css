@@ -13,6 +13,14 @@
   font-weight: bold;
   color:rgb(35, 46, 62);
 }
+.logo{
+  height: 60px;
+  width: 50px;
+  margin-left: 10px;
+}
+.logo-extend{
+  height: 300px;
+}
 .navbar-toggler-icon{
   background-color: white !important;
 }
