@@ -20,6 +20,7 @@ class CreateForm extends Component
     public $prezzo;
     public $temporary_images;
     public $images = [];
+    public $article;
 
     
     protected $rules=[
@@ -28,7 +29,7 @@ class CreateForm extends Component
         'descrizione'=> 'required|min:5',
         'prezzo'=> 'required|numeric',
         'images.*'=>'image|max:1024',
-        'temporary_images.*'=>'image|max:1024   '
+        'temporary_images.*'=>'image|max:1024',
         
     ];
     
@@ -70,20 +71,15 @@ class CreateForm extends Component
     public function store(){
         $this->validate();
         $category= Category::find($this->category);
-       $article= $category->articles()->create([
 
-            'titolo'=> $this->titolo,
-            'descrizione'=> $this->descrizione,
-            'prezzo'=> $this->prezzo,
-        ]);
         $this->article = Category::find($this->category)->articles()->create($this->validate());      
         if (count($this->images)) {
             foreach ($this->images as $image){
-                $this->anrticle->images()->create(['path'=>$image->store('images' , 'public')]);
+                $this->article->images()->create(['path'=>$image->store('images' , 'public')]);
             }
         }   
 
-        Auth::user()->articles()->save($article);
+        Auth::user()->articles()->save($this->article);
         $this->cleanForm();
         session()->flash('message', 'Articolo creato con successo, sarà pubblicato dopo la revisione.');
 

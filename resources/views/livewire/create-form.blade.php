@@ -21,11 +21,11 @@
                     @csrf
                     <div class="mb-3">
                       <label for="titolo" class="form-label">Titolo</label>
-                      <input type="text" wire:model.live="titolo" placeholder="Inserisci Titolo" class="form-control" id="titolo">
+                      <input type="text" wire:model.live="titolo" placeholder="Inserisci Titolo" class="form-control @error('title') is-invalid @enderror " id="titolo">
                     </div>
                     <div class="mb-3">
                         <label for="disabledSelect" class="form-label">Categoria</label>
-                        <select wire:model.defer="category" id="disabledSelect"  class="form-select">
+                        <select wire:model.defer="category" id="disabledSelect"  class="form-select @error('category') is-invalid @enderror">
                           <option value="">Scegli una categoria</option>
                           @foreach ($categories as $category)
                               <option value="{{$category->id}}">{{$category->name}}</option>
@@ -35,14 +35,14 @@
                       </div>
                     <div class="mb-3">
                       <label for="descrizione" class="form-label">Descrizione</label>
-                      <input type="text" wire:model.live="descrizione" placeholder="Scrivi una breve Descrizione" class="form-control" id="descrizione">
+                      <input type="text" wire:model.live="descrizione" placeholder="Scrivi una breve Descrizione" class="form-control @error('description') is-invalid @enderror" id="descrizione">
                     </div>
                     <div class="mb-3">
                         <label for="prezzo">Prezzo</label>
-                        <input type="number" wire:model.live="prezzo" class="form-control" placeholder="Inserisci il prezzo" id="prezzo" >
+                        <input type="number" wire:model.live="prezzo" class="form-control @error('price') is-invalid @enderror" placeholder="Inserisci il prezzo" id="prezzo" >
                     </div>
                     <div class="mb-3">
-                        <input wire:model="temporary_images" multiple class="form-control shadow" type="file">
+                        <input wire:model="temporary_images" multiple class="form-control shadow @error('img') is-invalid @enderror" type="file">
                     </div>
                     @if (!empty($images))
                         <div class="row">

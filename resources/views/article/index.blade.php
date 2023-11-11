@@ -9,7 +9,7 @@
           data-aos-offset="300"
           data-aos-easing="ease-in-sine">
             <div class="card card mb-5 " style="width: 18rem;">
-                  <img src="https://picsum.photos/200" class="card-img-top" alt="immagini">
+                  <img src="" class="card-img-top" alt="immagini">
                   <div class="card-body ">
                     <h5 class="card-title text-center">{{$article->titolo}}</h5>
                     <hr>
