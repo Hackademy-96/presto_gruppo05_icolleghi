@@ -34,7 +34,7 @@ window.addEventListener("scroll",()=>{
 // swiper Categorie 
 
 var swiper = new Swiper('.swiper', {
-    slidesPerView: 3,
+    slidesPerView: 5,
     direction: getDirection(),
     navigation: {
       nextEl: '.swiper-button-next',

@@ -39,27 +39,32 @@
             <a class="nav-link hvr-underline-from-left text-white active" href="{{route('create_article')}}"><i class="bi fs-4 bi-plus-square"></i></a>
           </li>
           
-          <div class="dropdown"data-bs-toggle="tooltip" data-bs-placement="bottom" data-aos="fade-right"
+          <div class="dropdown ms-3"data-bs-toggle="tooltip" data-bs-placement="bottom" data-aos="fade-right"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine" data-bs-title="Lingue">
-            <li class="nav-item ms-3 dropdown">
-              {{-- <a class="nav-link hvr-underline-from-left dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="bi fs-4 text-white bi bi-globe2"></i>
-              </a> --}}
-              <x-_locale lang="it"></x-_locale>
-              <x-_locale lang="en"></x-_locale>
-              <x-_locale lang="es"></x-_locale>
-                  <ul class="dropdown-menu">    
-                      <li class="justify-content-center d-flex dropdown-item hvr-trim">
-                      </li>  
-                      <li class="justify-content-center d-flex dropdown-item hvr-trim">
-                      </li>
-                      <li class="justify-content-center d-flex dropdown-item hvr-trim">
-                      </li> 
-                  </ul>
-            </div>
-          
+
+          <button class="nav-link hvr-underline-from-left dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi fs-4 text-white bi bi-globe2"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#">
+                <x-_locale lang="it"></x-_locale>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <x-_locale lang="en"></x-_locale>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <x-_locale lang="es"></x-_locale>
+              </a>
+            </li>
+          </ul>
         </ul>
+        </div>
         @guest
             <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">

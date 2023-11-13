@@ -79,9 +79,7 @@ data-aos-easing="ease-in-sine">
             </h6>
             @foreach ($categories as $category)
             <p>
-              <a data-aos="fade-right"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine" href="{{route('categoryShow', compact('category'))}}" class="text-reset">{{$category->name}}</a>
+              <a href="{{route('categoryShow', compact('category'))}}" class="text-reset">{{$category->name}}</a>
             </p>
             @endforeach
           </div>
