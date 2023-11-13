@@ -49,6 +49,7 @@
                         <input type="number" wire:model.live="prezzo" class="form-control" placeholder="Inserisci il prezzo" id="prezzo" >
                     </div>
                     <div class="mb-3">
+                        <label class="text-white" for="text">Scegli Immagine</label>
                         <input wire:model="temporary_images" multiple class="form-control shadow @error('img') is-invalid @enderror" type="file">
                     </div>
                     @if (!empty($images))
