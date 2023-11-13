@@ -2,7 +2,7 @@
     <div class="container-fluid  ">
       <a class="navbar-brand text-white" href="{{route('homePage')}}"><img class="logo" src="/img/colleghi.jpg" alt="logo"></a>
       <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="navbar-toggler-icon text-white "></i>
+        <i class="navbar-toggler-icon text-white "></i> 
       </button>
       <div class="collapse text-white navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
@@ -43,18 +43,18 @@
      data-aos-offset="300"
      data-aos-easing="ease-in-sine" data-bs-title="Lingue">
             <li class="nav-item ms-3 dropdown">
-              <a class="nav-link hvr-underline-from-left dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              {{-- <a class="nav-link hvr-underline-from-left dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="bi fs-4 text-white bi bi-globe2"></i>
-              </a>
+              </a> --}}
+              <x-_locale lang="it"></x-_locale>
+              <x-_locale lang="en"></x-_locale>
+              <x-_locale lang="es"></x-_locale>
                   <ul class="dropdown-menu">    
                       <li class="justify-content-center d-flex dropdown-item hvr-trim">
-                          <x-_locale lang="it"></x-_locale>
                       </li>  
                       <li class="justify-content-center d-flex dropdown-item hvr-trim">
-                          <x-_locale lang="en"></x-_locale>
                       </li>
                       <li class="justify-content-center d-flex dropdown-item hvr-trim">
-                          <x-_locale lang="es"></x-_locale>
                       </li> 
                   </ul>
             </div>
@@ -119,5 +119,16 @@
       </div>
     </div>
   </nav>
+
   
+  <div class="container mb-5 search-design  p-3 bg-body-secondary rounded-5 " style="margin-top: 100px;">
+    <div class="row">
+      <div class="col-md-12 ">
+        <form action="{{route('articles_search')}}" method="GET" class="d-flex" role="search">
+          <input name="searched" class="form-control  me-2" type="search" placeholder="{{__('ui.ricerca')}}" aria-label="Search">
+          <button class="btn btn-warning " type="submit"><i class="bi bi-search"></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
   
