@@ -86,7 +86,7 @@
               @if (Auth::user()->is_revisor)
                   <li>
                 <a class="dropdown-item text-center" href="{{route('indexRevisor')}}">
-                  Zona revisore
+                  {{__('zonarevisore')}}
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{App\Models\Article::toBeRevisionedCount()}}</span>
                 </a>
               </li>

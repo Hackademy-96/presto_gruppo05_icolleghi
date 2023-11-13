@@ -21,7 +21,10 @@ return [
     'prodotti'=>'Productos',
     'contattaci'=>'Contáctenos',
     'diventarev'=>'¡Conviértete en crítico!',
-
+    'disclaimer'=>'Al acceder a tu cuenta declaras haber leído y aceptado nuestras Condiciones Generales de Uso y Venta. Revise nuestra Política de privacidad, nuestra Política de cookies y nuestra Política de publicidad basada en intereses.',
+    'accedilog'=>'Acceso',
+    'zonarevisore'=>'Área de auditores',
+    'titolocf'=>'título',
 
 
 
