@@ -24,10 +24,10 @@
                         <input placeholder="Inserisci Password" type="password" name="password" class="form-control" id="password">
                     </div>
                     <div class="col-md-8 col-lg-8 col-xl-8 mx-auto mb-4">
-                        <p>Accedendo al tuo account dichiari di aver letto e accetti le nostre Condizioni generali di uso e vendita. Prendi visione della nostra Informativa sulla privacy, della nostra Informativa sui Cookie e della nostra Informativa sulla Pubblicità definita in base agli interessi.</p>
+                        <p>{{__('ui.disclaimer')}}</p>
                     </div>
                     <div class="justify-content-center mt-3 d-flex">
-                        <button type="submit" class="btn btn-warning">Accedi</button>
+                        <button type="submit" class="btn btn-warning">{{__('ui.accedilog')}}</button>
                     </div>
                     
                 </form> 

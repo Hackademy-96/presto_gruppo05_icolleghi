@@ -21,6 +21,11 @@ return [
     'prodotti'=>'Prodotti',
     'contattaci'=>'Contattaci',
     'diventarev'=>'Diventa revisore!',
+    'disclaimer'=>'Accedendo al tuo account dichiari di aver letto e accetti le nostre Condizioni generali di uso e vendita. Prendi visione della nostra Informativa sulla privacy, della nostra Informativa sui Cookie e della nostra Informativa sulla Pubblicità definita in base agli interessi.',
+    'accedilog'=>'Accedi',
+    'zonarevisore'=>'Zona revisore',
+    'titolocf'=>'Titolo',
+    
     
 
 

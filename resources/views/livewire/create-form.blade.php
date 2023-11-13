@@ -27,7 +27,7 @@
                 <form wire:submit.prevent='store'>
                     @csrf
                     <div class="mb-3">
-                      <label for="titolo text-white" class="form-label text-white">Titolo</label>
+                      <label for="titolo text-white" class="form-label text-white">{{__('ui.titolocf')}}</label>
                       <input type="text" wire:model.live="titolo" placeholder="Inserisci Titolo" class="form-control" id="titolo">
                     </div>
                     <div class="mb-3">

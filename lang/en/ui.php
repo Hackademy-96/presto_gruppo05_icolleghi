@@ -21,6 +21,10 @@ return [
     'prodotti'=>'Products',
     'contattaci'=>'Contact us',
     'diventarev'=>'Become a reviewer!',
+    'disclaimer'=>'By accessing your account you declare that you have read and accepted our General Conditions of Use and Sale. Please review our Privacy Policy, our Cookie Policy and our Interest-Based Advertising Policy.',
+    'accedilog'=>'Log in',
+    'zonarevisore'=>'Reviewer area',
+    'titolocf'=>'Title',
     
 
 

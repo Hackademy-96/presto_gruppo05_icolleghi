@@ -77,24 +77,24 @@
                     <li class="nav-item">
                       <a class="nav-link hvr-underline-from-left text-white active" aria-current="page" href="{{route('login')}}">{{__('ui.accedinav')}}</a>
                     </li>
-            
-                      @endguest
-                      @auth
-                      <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                          <a class="nav-link hvr-underline-from-left text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Ciao {{Auth::user()->name}}
-                          </a>
-                          <ul class="dropdown-menu">
-                            {{-- Revisore --}}
-                            @if (Auth::user()->is_revisor)
-                                <li>
-                              <a class="dropdown-item text-center" href="{{route('indexRevisor')}}">
-                                Zona revisore
-                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{App\Models\Article::toBeRevisionedCount()}}</span>
-                              </a>
-                            </li>
-                            @endif
+            </ul>
+        @endguest
+        @auth
+        <ul class="navbar-nav  mb-2 mb-lg-0">
+         <li class="nav-item  dropdown">
+             <a class="nav-link hvr-underline-from-left text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               Ciao {{Auth::user()->name}}
+             </a>
+             <ul class="dropdown-menu">
+              {{-- Revisore --}}
+              @if (Auth::user()->is_revisor)
+                  <li>
+                <a class="dropdown-item text-center" href="{{route('indexRevisor')}}">
+                  Zona revisore
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{App\Models\Article::toBeRevisionedCount()}}</span>
+                </a>
+              </li>
+              @endif
                
               
                
