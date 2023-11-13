@@ -26,7 +26,7 @@
               </div>
               @empty
               <div class="col-12 text-center">
-                <h2 class="display-2">Non ci sono annunci in questa categoria</h2>
+                <h2 class="display-2">{{__('ui.nienteAnnunci')}}</h2>
                 <p class="fs-4 mt-5 font-h1">Pubblicane uno: <a class="btn btn-danger" href="{{route('create_article')}}">Nuovo Annuncio</a></p>
               </div>
               @endforelse   

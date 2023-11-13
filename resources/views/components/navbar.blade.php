@@ -2,7 +2,7 @@
     <div class="container-fluid  ">
       <a class="navbar-brand text-white" href="{{route('homePage')}}"><img class="logo" src="/img/colleghi.jpg" alt="logo"></a>
       <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="navbar-toggler-icon text-white "></i>
+        <i class="navbar-toggler-icon text-white "></i> 
       </button>
       <div class="collapse text-white navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
@@ -119,5 +119,16 @@
       </div>
     </div>
   </nav>
+
   
+  <div class="container mb-5 search-design  p-3 bg-body-secondary rounded-5 " style="margin-top: 100px;">
+    <div class="row">
+      <div class="col-md-12 ">
+        <form action="{{route('articles_search')}}" method="GET" class="d-flex" role="search">
+          <input name="searched" class="form-control  me-2" type="search" placeholder="{{__('ui.ricerca')}}" aria-label="Search">
+          <button class="btn btn-warning " type="submit"><i class="bi bi-search"></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
   
