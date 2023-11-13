@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-md-12 ">
         <form action="{{route('articles_search')}}" method="GET" class="d-flex" role="search">
-          <input name="searched" class="form-control  me-2" type="search" placeholder="Scrivi Qui la Tua Ricerca" aria-label="Search">
+          <input name="searched" class="form-control  me-2" type="search" placeholder="{{__('ui.ricerca')}}" aria-label="Search">
           <button class="btn btn-warning " type="submit"><i class="bi bi-search"></i></button>
         </form>
       </div>
@@ -73,7 +73,7 @@
       {{-- Categorie   d-md-block --}}
         <div class=" container d-none d-md-block mb-5 box-prodotti bg-body-tertiary p-2 shadow rounded-5 justify-content-center mt-5 ">
           <div class="row m-5 ">
-            <h1 class="text-center font-h1 mb-5 display-4 ">Categorie</h1>
+            <h1 class="text-center font-h1 mb-5 display-4 ">{{__('ui.categorie')}}</h1>
                 <div class="swiper">
                   <div class="swiper-wrapper">
                     @foreach ($categories as $category)
@@ -105,7 +105,7 @@
           data-aos-easing="ease-in-sine">
       <div class="row m-5 ">
         <div class="col-12">
-          <h1 class="text-center font-h1 text-white mb-5 display-4 ">Categorie</h1>
+          <h1 class="text-center font-h1 text-white mb-5 display-4 ">{{__('ui.categorie')}}</h1>
         </div>
           <div class="col-12">
             <div id="carouselExample" class="carousel slide">
@@ -150,12 +150,12 @@
         <div class="col-12 "data-aos="fade-up"
         data-aos-anchor-placement="bottom-center">
             <div class=" m-5  justify-content-center d-flex">
-        <a  class="fs-2 btn btn-dark hvr-bounce-to-right"href="{{route('create_article')}}">Inserisci Annuncio</a>
+        <a  class="fs-2 btn btn-dark hvr-bounce-to-right"href="{{route('create_article')}}">{{__('ui.inserisciAnnuncio')}}</a>
       </div>
         </div>
       </div>
       <div class="row m-5">
-        <h1 class="text-center text-white mb-5">Ultimi Articoli</h1>
+        <h1 class="text-center text-white mb-5">{{__('ui.ultimiArticoli')}}</h1>
            @foreach ($articles as $article)
             <div class="col-12 justify-content-center d-flex hvr-float-shadow col-md-4"data-aos="zoom-in-left">
               <x-carosello-card :article="$article" :index="$loop->index"/>      

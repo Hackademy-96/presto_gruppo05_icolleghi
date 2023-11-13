@@ -18,8 +18,8 @@
                         <h5 class="card-title">{{$article->titolo}}</h5>
                         <p class="card-text">{{$article->prezzo}}€</p>
                         <p class="card-text">{{$article->descrizione}}</p>
-                        <a href="{{route('showArticle', compact('article'))}}" class="btn mb-2 btn-warning visualizza-articolo justify-content-center d-flex">Visualizza Articolo</a>
-                        <p class="card-footer my-2">Pubblicato il: {{$article->created_at->format('d/m/y')}} - Autore: {{$article->user->name}}</p>
+                        <a href="{{route('showArticle', compact('article'))}}" class="btn mb-2 btn-warning visualizza-articolo justify-content-center d-flex">{{__('ui.visArticolo')}}</a>
+                        <p class="card-footer my-2">{{__('ui.pubblicato')}}{{$article->created_at->format('d/m/y')}} - {{__('ui.autore')}}: {{$article->user->name}}</p>
                       </div>
                     </div>
                       
