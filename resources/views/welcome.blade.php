@@ -1,5 +1,5 @@
 <x-layout >
-  <div class="container mb-5 search-design  p-3 bg-body-secondary rounded-5 " style="margin-top: 100px;">
+  {{-- <div class="container mb-5 search-design  p-3 bg-body-secondary rounded-5 " style="margin-top: 100px;">
     <div class="row">
       <div class="col-md-12 ">
         <form action="{{route('articles_search')}}" method="GET" class="d-flex" role="search">
@@ -8,8 +8,8 @@
         </form>
       </div>
     </div>
-  </div>
-  
+  </div> --}}
+
 @if (session('access.denied'))
               <div class="alert alert-success">
                   {{ session('access.denied') }}

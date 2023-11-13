@@ -10,5 +10,6 @@ return [
     'pubblicato'=>'Publicado en:',
     'tuttiArtic'=>'Todos Los Artículos',
     'nienteAnnunci'=>'No hay anuncios en esta categoría.',
+    'titoloCategoria'=>'Articoli della Categoria:'
 
 ]; 
