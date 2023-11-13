@@ -9,7 +9,7 @@
           data-aos-offset="300"
           data-aos-easing="ease-in-sine">
             <div class="card card mb-5 " style="width: 18rem;">
-                  <img src="" class="card-img-top" alt="immagini">
+                  <img src="{{!$article->images()->get()->isEmpty() ? $article->images()->first()->getUrl(400,300) : '/img/colleghi.jpg'}}" class="card-img-top" alt="immagini">
                   <div class="card-body ">
                     <h5 class="card-title text-center">{{$article->titolo}}</h5>
                     <hr>

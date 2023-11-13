@@ -5,8 +5,10 @@ namespace App\Livewire;
 use App\Models\Article;
 use Livewire\Component;
 use App\Models\Category;
+use App\Jobs\ResizeImage;
 use Livewire\WithFileUploads;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\File;
 
 
 class CreateForm extends Component
@@ -28,8 +30,8 @@ class CreateForm extends Component
         'category'=> 'required',
         'descrizione'=> 'required|min:5',
         'prezzo'=> 'required|numeric',
-        'images.*'=>'image|max:1024',
-        'temporary_images.*'=>'image|max:1024',
+        'images.*'=>'image|max:1024|required',
+        'temporary_images.*'=>'image|max:1024|required',
         
     ];
     
@@ -73,11 +75,17 @@ class CreateForm extends Component
         $category= Category::find($this->category);
 
         $this->article = Category::find($this->category)->articles()->create($this->validate());      
-        if (count($this->images)) {
-            foreach ($this->images as $image){
-                $this->article->images()->create(['path'=>$image->store('images' , 'public')]);
+        if(count($this->images)) {
+            foreach ($this->images as $image) {
+                // $this->article->images()->create(['path' =>$image->store ('images' , 'public')]);
+                $newFileName = "articles/{$this->article->id}";
+                $newImage = $this->article->images()->create(['path'=>$image->store($newFileName,'public')]);
+                dispatch(new ResizeImage($newImage->path, 400, 300));
             }
-        }   
+            File::deleteDirectory(storage_path('/app/livewire-tmp'));
+        }
+
+
 
         Auth::user()->articles()->save($this->article);
         $this->cleanForm();
