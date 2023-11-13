@@ -10,5 +10,6 @@ return [
     'pubblicato'=>'Published on:',
     'tuttiArtic'=>'All Articles',
     'nienteAnnunci'=>'There are no ads in this category',
-    'titoloCategoria'=>'Articles in the Category:'
+    'titoloCategoria'=>'Articles in the Category:',
+    
 ]; 
