@@ -10,7 +10,8 @@ return [
     'pubblicato'=>'Pubblicato il:',
     'tuttiArtic'=>'Tutti Gli Articoli',
     'nienteAnnunci'=>'Non ci sono annunci in questa categoria',
-    'titoloCategoria'=>'Artículos en la Categoría:'
+    'titoloCategoria'=>'Artículos en la Categoría:',
+  
     
     
 ];
