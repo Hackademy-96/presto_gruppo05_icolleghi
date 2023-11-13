@@ -1,5 +1,12 @@
-<div class="container shadow p-4 rounded-5 bg-body-secondary" style="margin-top: 130px">
-    <h2 class="display-2 m-5 bg-success text-white shadow rounded-5 text-center">Crea il Tuo Annuncio</h2>
+<div class="container p-4 shadow" style="background-color: rgb(35, 46, 62)" style="margin-top: 130px ">
+    <div class="container" style="margin-top: 120px">
+        <div class="row">
+            <div class="col-12 justify-content-center d-flex">
+                <img class="logo-extend" src="/img/colleghi.jpg" alt="logo">
+            </div>
+        </div>
+    </div>
+    <h2 class=" display-3 m-5 text-center text-white font-creaannuncio ">Crea il Tuo Annuncio:</h2>
     <div class="container mt-5  mb-5">
         <div class="row justify-content-center">
             <div class="col-12 col-md-6">
@@ -20,11 +27,11 @@
                 <form wire:submit.prevent='store'>
                     @csrf
                     <div class="mb-3">
-                      <label for="titolo" class="form-label">Titolo</label>
+                      <label for="titolo text-white" class="form-label text-white">Titolo</label>
                       <input type="text" wire:model.live="titolo" placeholder="Inserisci Titolo" class="form-control" id="titolo">
                     </div>
                     <div class="mb-3">
-                        <label for="disabledSelect" class="form-label">Categoria</label>
+                        <label for="disabledSelect" class="form-labe text-white ">Categoria</label>
                         <select wire:model.defer="category" id="disabledSelect"  class="form-select">
                           <option value="">Scegli una categoria</option>
                           @foreach ($categories as $category)
@@ -34,11 +41,11 @@
                         </select>
                       </div>
                     <div class="mb-3">
-                      <label for="descrizione" class="form-label">Descrizione</label>
+                      <label for="descrizione" class="form-label text-white">Descrizione</label>
                       <input type="text" wire:model.live="descrizione" placeholder="Scrivi una breve Descrizione" class="form-control" id="descrizione">
                     </div>
                     <div class="mb-3">
-                        <label for="prezzo">Prezzo</label>
+                        <label for="prezzo" class=" text-white">Prezzo</label>
                         <input type="number" wire:model.live="prezzo" class="form-control" placeholder="Inserisci il prezzo" id="prezzo" >
                     </div>
                     <div class="mb-3">
