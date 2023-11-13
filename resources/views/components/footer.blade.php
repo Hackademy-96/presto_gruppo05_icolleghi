@@ -7,7 +7,7 @@ data-aos-easing="ease-in-sine">
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
       <!-- Left -->
       <div class="me-5 d-none d-lg-block">
-        <span>Collegati a noi tramite i nostri Social</span>
+        <span>{{__('ui.collegatianoi')}}</span>
       </div>
       <!-- Left -->
   
@@ -64,7 +64,7 @@ data-aos-easing="ease-in-sine">
             <p data-aos="fade-right"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine">
-              Azienda sul campo dal 2019 con oltre 1.200 clienti in UE, autorizzati alla vendita di prodotti in tutto il mondo tramite IQOSS., Import ed Export.
+     {{__('ui.aziendaincampo')}}
             </p>
           </div>
           <!-- Grid column -->
@@ -75,7 +75,7 @@ data-aos-easing="ease-in-sine">
             <h6 data-aos="fade-right"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine" class="text-uppercase fw-bold mb-4">
-              Prodotti
+     {{__('ui.prodotti')}}
             </h6>
             @foreach ($categories as $category)
             <p>
@@ -93,17 +93,17 @@ data-aos-easing="ease-in-sine">
             <h5 data-aos="fade-right"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine" class="text-uppercase fw-bold mb-4">
-              Link Utili
+              {{__('ui.linkutili')}}
             </h5>
             <h6 data-aos="fade-right"
      data-aos-offset="300"
-     data-aos-easing="ease-in-sine">Vuoi lavorare con noi?</h6>
+     data-aos-easing="ease-in-sine">{{__('ui.lavconnoi')}}</h6>
             <p data-aos="fade-right"
      data-aos-offset="300"
-     data-aos-easing="ease-in-sine">Registrati e clicca qui</p>
+     data-aos-easing="ease-in-sine">{{__('ui.regeclick')}}</p>
             <a data-aos="fade-right"
      data-aos-offset="300"
-     data-aos-easing="ease-in-sine" href="{{route('become.revisor')}}" class="btn btn-warning shadow my-3 mt-0 text-dark fs-6">Diventa revisore!</a>
+     data-aos-easing="ease-in-sine" href="{{route('become.revisor')}}" class="btn btn-warning shadow my-3 mt-0 text-dark fs-6">{{__('ui.diventarev')}}</a>
             <p>
               <a data-aos="fade-right"
      data-aos-offset="300"
@@ -117,7 +117,7 @@ data-aos-easing="ease-in-sine">
             <p>
               <a data-aos="fade-right"
      data-aos-offset="300"
-     data-aos-easing="ease-in-sine" href="#!" class="text-reset">Refound Policy</a>
+     data-aos-easing="ease-in-sine" href="#!" class="text-reset">Policy di rimborso</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -127,7 +127,7 @@ data-aos-easing="ease-in-sine">
             <!-- Links -->
             <h6 data-aos="fade-right"
      data-aos-offset="300"
-     data-aos-easing="ease-in-sine" class="text-uppercase fw-bold mb-4">Contattaci</h6>
+     data-aos-easing="ease-in-sine" class="text-uppercase fw-bold mb-4">{{__('ui.contattaci')}}</h6>
             <p data-aos="fade-right"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"><i  class="fas fa-home me-3"></i> Italia | Puglia | Sicilia</p>
@@ -153,7 +153,7 @@ data-aos-easing="ease-in-sine">
   
     <!-- Copyright -->
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);" >
-      © 2019 Copyright:
+      © 2023 Copyright:
       <a  class="text-reset fw-bold" href="https://skycreators.it">SkyCreators Feat i Colleghi Aulab Hackacademy-96</a>
     </div>
     <!-- Copyright -->

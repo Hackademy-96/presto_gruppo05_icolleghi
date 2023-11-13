@@ -38,7 +38,7 @@
         <div class="row">
             <div class="col-12 mb-5 justify-content-center d-flex">    
                 <div class="justify-content-center d-flex flex-column">
-                    <h3 class="text-white mb-4">Non se ancora Registrato?</h3>
+                    <h3 class="text-white mb-4">Non sei ancora Registrato?</h3>
                     <a href="{{route('register')}}" class="btn btn-warning">Registrati</a>
                 </div>
             </div>

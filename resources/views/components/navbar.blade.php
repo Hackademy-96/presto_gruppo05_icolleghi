@@ -63,10 +63,10 @@
         @guest
             <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                      <a class="nav-link hvr-underline-from-left text-white active" aria-current="page" href="{{route('register')}}">Registrati</a>
+                      <a class="nav-link hvr-underline-from-left text-white active" aria-current="page" href="{{route('register')}}">{{__('ui.registratinav')}}</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link hvr-underline-from-left text-white active" aria-current="page" href="{{route('login')}}">Accedi</a>
+                      <a class="nav-link hvr-underline-from-left text-white active" aria-current="page" href="{{route('login')}}">{{__('ui.accedinav')}}</a>
                     </li>
             </ul>
         @endguest
