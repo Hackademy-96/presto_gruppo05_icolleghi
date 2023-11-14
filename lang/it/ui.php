@@ -46,6 +46,7 @@ return [
     'sdesc'=>'Scrivi una breve Descrizione',
     'insp'=>'Inserisci il prezzo',
     'Frigoriferi'=>'Frigoriferi',
+    'Profilo'=>'Profilo',
 
 
 

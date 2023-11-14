@@ -46,6 +46,7 @@ return [
     'sdesc'=>'Write a short description',
     'insp'=>'Enter the price',
     'frigoriferi'=>'fridge',
+    'Profilo'=>'Profile',
     
 
     
