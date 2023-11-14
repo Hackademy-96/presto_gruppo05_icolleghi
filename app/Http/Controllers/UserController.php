@@ -8,9 +8,9 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    public function user_page(User $user){
-        $user = User::findOrFail($user->id);
-        $articles = $user->articles;
-        return view('user_page', compact('articles'));
+    public function user_page(Request $request){
+        $user = $request->user();
+        $articles = Article::where('user_id', $user->id)->get()->sortByDesc('created_at');
+        return view('user_page', compact('articles', 'user'));
     }
 }

@@ -45,6 +45,7 @@ return [
     'inst'=>'Ingrese el título',
     'sdesc'=>'Escribe una breve descripción',
     'insp'=>'Introduce el precio',
+    'frigoriferi'=>'fridge'
     
 
 

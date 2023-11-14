@@ -58,13 +58,15 @@
                 <div class="col-md-3">
                   <div class="card-body">
                     <h5>Revisione Immagini</h5>
+                    @foreach($article_to_check->images as $image)
                     <p>Adulti: <span class="{{$image->adult}}"></span></p>
                     <p>Satira: <span class="{{$image->spoof}}"></span></p>
                     <p>Medicina: <span class="{{$image->medical}}"></span></p>
                     <p>Violenza: <span class="{{$image->violence}}"></span></p>
                     <p>Contenuto Ammiccante: <span class="{{$image->racy}}"></span></p>
                   </div>
-                </div>
+                  @endforeach
+               </div>
               </div>
               <div class="container justify-content-center d-flex mt-5 mb-4 p-3 bg-black text-white shadow rounded-5">
                 <div class="row">
