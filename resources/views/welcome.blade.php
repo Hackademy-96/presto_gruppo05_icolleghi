@@ -47,7 +47,7 @@
         </div>
       </div> --}}
 
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
           <div class="col-12">
                   <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
