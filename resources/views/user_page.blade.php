@@ -1,8 +1,9 @@
 <x-layout>
-    <h1>  Ciao {{Auth::user()->name}}</h1>
+  
+    <div class="container shadow bg-white rounded-5">
+      <h2 class="font-h2 text-center">  Ciao {{Auth::user()->name}}</h2>
 
-    <h2>ARTICOLI CARICATI:</h2>
-    <div class="container">
+      <h3 class="text-center testo-3 m-5">ARTICOLI CARICATI:</h3>
         <div class="row">
 
             @foreach ($articles as $article)
