@@ -30,6 +30,7 @@
 .navbar-toggler{
   background-color: white !important;
 }
+
 .font-h5{
   font-weight: bold;
   color: #000;
@@ -46,7 +47,7 @@
 }
 
 body{
-    background-color: lightgray;
+    background-color: silver;
 }
 footer{
     background-color: lightgray;
@@ -93,8 +94,8 @@ footer{
 }
 /* MODIFICA CATEGORIE */
 .categorie-bordo{
-    padding: 4px;
-    border: 3px solid rgb(35, 46, 62);
+    padding:2px;
+    border: 3px solid rgba(35, 46, 62, 0.4);
     box-shadow: 5px 10px #888888;
     height: 150px;
     width: 150px;
@@ -162,7 +163,7 @@ footer{
   }
 
   body {
-    background: #eee;
+    
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #000;
@@ -385,7 +386,7 @@ body {
 }
 
 body {
-  background: #eee;
+  
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
@@ -424,3 +425,4 @@ body {
   height: 100px;
   width: 100px;
 }
+

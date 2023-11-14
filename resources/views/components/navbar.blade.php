@@ -1,6 +1,9 @@
 <nav id="navbar" class="navbar  nav-custom navbar-expand-lg fixed-top">
-    <div class="container-fluid  ">
-      <a class="navbar-brand text-white" href="{{route('homePage')}}"><img class="logo" src="/img/colleghi.jpg" alt="logo"></a>
+  
+    <div class="container">
+      <div class="">
+        <a class="navbar-brand text-white" href="{{route('homePage')}}"><img class="logo" src="/img/colleghi.jpg" alt="logo"></a>
+      </div>
       <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="navbar-toggler-icon text-white "></i> 
       </button>
@@ -49,29 +52,30 @@
           <ul class="dropdown-menu">
             <li>
               <a class="dropdown-item" href="#">
-                <x-_locale lang="it"></x-_locale>
+                <x-_locale lang="it"> </x-_locale>ITA
               </a>
             </li>
             <li>
               <a class="dropdown-item" href="#">
-                <x-_locale lang="en"></x-_locale>
+                <x-_locale lang="en"></x-_locale>ENG
               </a>
             </li>
             <li>
               <a class="dropdown-item" href="#">
-                <x-_locale lang="es"></x-_locale>
+                <x-_locale lang="es"></x-_locale>ESP
               </a>
             </li>
           </ul>
-        </ul>
+        
         </div>
         @guest
-            <ul class="navbar-nav mb-2 mb-lg-0">
+        <div class="container ms-auto me-auto ">
+          <ul class="navbar-nav mb-2  mb-lg-0">
                     <li class="nav-item">
-                      <a class="nav-link hvr-underline-from-left text-white active" aria-current="page" href="{{route('register')}}">Registrati</a>
+                      <a class="nav-link hvr-underline-from-left text-white active" aria-current="page" href="{{route('register')}}">{{__('ui.registratinav')}}</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link hvr-underline-from-left text-white active" aria-current="page" href="{{route('login')}}">Accedi</a>
+                      <a class="nav-link hvr-underline-from-left text-white active" aria-current="page" href="{{route('login')}}">{{__('ui.accedinav')}}</a>
                     </li>
             </ul>
         @endguest
@@ -94,35 +98,23 @@
                
               
                
-              <li class="nav-item">
-                <form method="POST" class="justify-content-center d-flex" action="{{route('logout')}}">
-                  @csrf
-                  <button  class=" btn  bottone-logout text-center ">Logout  <i class="fa-solid fa-right-from-bracket fa-beat"></i></button>
-                </form>
-              </li>
-            </ul>
-          </li>
-        </ul> 
-        
-        @endauth
-                  
-                    
-
+                            <li class="nav-item">
+                              <form method="POST" class="justify-content-center d-flex" action="{{route('logout')}}">
+                                @csrf
+                                <button  class=" btn  bottone-logout text-center ">Logout  <i class="fa-solid fa-right-from-bracket fa-beat"></i></button>
+                              </form>
+                            </li>
+                          </ul>
+                        </li>
+                        @endauth
                       </ul>
-                    </li>       
-                  </ul>
-        </ul>
-        
-        
-          
-        
-          
-       
-        <div>
-          
+        </div>
+            
+          <div>
         </div>
       </div>
     </div>
+  </div>
   </nav>
 
   

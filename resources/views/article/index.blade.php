@@ -1,4 +1,5 @@
 <x-layout>
+  
     <div class="container bg-card shadow rounded-5 justify-content-center" style="margin-top: 110px" data-aos="fade-right"
     data-aos-offset="300"
     data-aos-easing="ease-in-sine">
