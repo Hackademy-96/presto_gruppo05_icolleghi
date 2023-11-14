@@ -96,6 +96,9 @@ data-aos-easing="ease-in-sine" data-bs-title="{{__('ui.lingue')}}">
       </li>
       @endif
 
+    <li class="nav-item">
+      <a href="{{route('user_page')}}">profilo</a>
+    </li>
 
 
       <li class="nav-item">

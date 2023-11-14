@@ -45,7 +45,7 @@ return [
     'inst'=>'Inserisci Titolo',
     'sdesc'=>'Scrivi una breve Descrizione',
     'insp'=>'Inserisci il prezzo',
-
+    'Frigoriferi'=>'Frigoriferi',
 
 
 

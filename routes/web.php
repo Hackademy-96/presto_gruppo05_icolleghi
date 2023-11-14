@@ -54,6 +54,6 @@ Route::get('/ricerca/annuncio', [PublicController::class, 'searchArticles'])->na
 Route::get('/lingua/{lang}', [PublicController::class, 'setLanguage'])->name('setLocale');
 
 // pagina profilo
-Route::get('/profilo/{user}', [UserController::class, 'user_page'])->name('user_page');
+Route::get('/profilo', [UserController::class, 'user_page'])->name('user_page');
 
 
