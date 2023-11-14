@@ -120,17 +120,5 @@ data-aos-easing="ease-in-sine" data-bs-title="Lingue">
         <button class="btn btn-warning " type="submit"><i class="bi bi-search"></i></button>
       </form>
     </div>
-</nav>
-
-
-<div class="container mb-5 search-design  p-3 bg-body-secondary rounded-5 " style="margin-top: 100px;">
-<div class="row">
-  <div class="col-md-12 ">
-    <form action="{{route('articles_search')}}" method="GET" class="d-flex" role="search">
-      <input name="searched" class="form-control  me-2" type="search" placeholder="{{__('ui.ricerca')}}" aria-label="Search">
-      <button class="btn btn-warning " type="submit"><i class="bi bi-search"></i></button>
-    </form>
   </div>
-</div>
-
 </div>
