@@ -2,7 +2,7 @@
 return [
     'categorie'=>'Categorias',
     'inserisciAnnuncio'=>'Insertar Anuncio',
-    'ultimiArticoli'=> 'Usltimos Artículos',
+    'ultimiArticoli'=> 'Ustimos Artículos',
     'categoria'=>'Categoría',
     "visArticolo"=>'Ver artículo',
     'autore'=>'Autor',
@@ -45,7 +45,9 @@ return [
     'inst'=>'Ingrese el título',
     'sdesc'=>'Escribe una breve descripción',
     'insp'=>'Introduce el precio',
-    'frigoriferi'=>'fridge'
+    'frigoriferi'=>'fridge',
+    'Profilo'=>'Perfil',
+    'nessunannuncio'=>'Aún no se han creado anuncios',
     
 
 

@@ -1,10 +1,55 @@
 <x-layout>
-    <h1>  Ciao {{Auth::user()->name}}</h1>
+  {{-- Saluto  --}}
+  <div class="container">
+    <div class="row">
+      <div class="col-12 bg-card p-3 rounded-5">
+        <h2 class="font-h2 text-white text-center">  Ciao {{Auth::user()->name}}</h2>
+      </div>
+    </div>
+  </div>
+      
+      
+  {{-- Profilo  --}}
+      <div class="container shadow bg-card mt-4 p-4 rounded-5 text-white">
+        <div class="row justify-content-center">
+          <div class="col-4 justify-content-center d-flex">
+            <img class="rounded-5" src="https://picsum.photos/200" alt="">
+          </div>
+            <div class="col-4 fs-3">
+              <a href="" class="me-4 text-reset">
+                <i data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="bi bi-facebook"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="bi bi-twitter"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="bi bi-google"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="bi bi-instagram"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="bi bi-linkedin"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="bi bi-github"></i>
+              </a>
+            </div>
+            <div class="col-4 justify-content-center">
+              <h3>I Tuoi Dati:</h3>
+              <hr>
+              <h4>Nome:</h4>
+              <p>{{Auth::user()->name}}</p>
+              <h4>E-Mail</h4>
+              <p>{{Auth::user()->email}}</p>
+            </div> 
+        </div>
+      </div>
 
-    <h2>ARTICOLI CARICATI:</h2>
-    <div class="container">
+  {{-- Annunci Creati  --}}
+    <div class="container shadow bg-white rounded-5">
+      <h3 class="text-center testo-3 p-4 mt-5">Articoli Creati:</h3>
         <div class="row">
-
             @foreach ($articles as $article)
             <div class="col-md-4 col-12 col-lg-8 col-xl-4 mx-auto mb-4 justify-content-center d-flex hvr-float-shadow " data-aos="fade-right"
             data-aos-offset="300"
@@ -25,8 +70,6 @@
                     </div>               
               </div>          
             </div>
-        
-        
           @endforeach
         </div>
     </div>

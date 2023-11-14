@@ -2,10 +2,10 @@
     <div class="container  mb-5" style="margin-top: 120px">
         <div class="row m-5">
             <div class=" col-md-6 col-lg-6 col-xl-6 mx-auto mb-4">
-                <div class="container me-5 shadow p-3 rounded-5 bg-body-secondary justify-content-center d-flex">
+                <div class="container text-center shadow p-3 rounded-5 bg-body-secondary">
                     <div class="row">
                         <div class="col-md-8 col-lg-8 col-xl-8 mx-auto mb-4">
-                            <h1 class="display-4"><strong>{{$article->titolo}}</strong></h1>
+                            <h1 class="display-5"><strong>{{$article->titolo}}</strong></h1>
                         </div>
                     </div>
                 </div>
@@ -21,7 +21,7 @@
             <div class="col-md-6 col-lg-6 col-xl-6 mx-auto mb-4">
                 <div id="carouselExampleFade" class="carousel ms-5 slide carousel-fade">
                     @if($article->images)
-                    <div class="carousel-inner">
+                    <div class="carousel-inner rounded-5 shadow">
                         @foreach ($article->images as $image)
                         <div class="carousel-item @if($loop->first)active @endif">
                           <img src="{{$image->getUrl(400,300)}}" class="d-block w-100" alt="...">
