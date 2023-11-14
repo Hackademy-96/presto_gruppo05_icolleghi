@@ -21,7 +21,7 @@
             <div class="col-md-6 col-lg-6 col-xl-6 mx-auto mb-4">
                 <div id="carouselExampleFade" class="carousel ms-5 slide carousel-fade">
                     @if($article->images)
-                    <div class="carousel-inner">
+                    <div class="carousel-inner rounded-5 shadow">
                         @foreach ($article->images as $image)
                         <div class="carousel-item @if($loop->first)active @endif">
                           <img src="{{$image->getUrl(400,300)}}" class="d-block w-100" alt="...">
