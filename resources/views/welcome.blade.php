@@ -8,130 +8,126 @@
 
  
 
-  {{-- carosello dispositivi grandi  --}}
-  <div class="container d-none d-md-block">
-    <div class="row">
-      <div class="col-12">
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner carousel-inner ">
-            <div class="carousel-item active" data-bs-interval="3000">
-              <img src="https://cdn.mos.cms.futurecdn.net/8E6totXLziTcHNNtStGadb.jpg" class="d-block immagini-carosello carosello-home img-fluid w-100 h-50 rounded-5 " alt="https://picsum.photos/800">
+      {{-- carosello dispositivi grandi  --}}
+      <div class="container d-none d-md-block">
+        <div class="row">
+          <div class="col-12">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner carousel-inner ">
+                <div class="carousel-item active" data-bs-interval="3000">
+                  <img src="https://cdn.mos.cms.futurecdn.net/8E6totXLziTcHNNtStGadb.jpg" class="d-block immagini-carosello carosello-home img-fluid w-100 h-50 rounded-5 " alt="https://picsum.photos/800">
+                </div>
+                <div class="carousel-item " data-bs-interval="3000">
+                  <img src="https://www.dexerto.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://editors.dexerto.com/wp-content/uploads/2022/11/28/cm-aorus.jpg" class="d-block carosello-home img-fluid w-100 h-50 rounded-5" alt="https://picsum.photos/801">
+                </div>
+                <div class="carousel-item " data-bs-interval="3000">
+                  <img src="https://cdn.zoomg.ir/2021/1/spider-man-far-from-home-mysterio-inside-illusion-machine.jpg" class="d-block carosello-home img-fluid w-100 h-50 rounded-5" alt="https://picsum.photos/802">
+                </div>
+                
+                
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <div class="carousel-item " data-bs-interval="3000">
-              <img src="https://www.dexerto.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://editors.dexerto.com/wp-content/uploads/2022/11/28/cm-aorus.jpg" class="d-block carosello-home img-fluid w-100 h-50 rounded-5" alt="https://picsum.photos/801">
-            </div>
-            <div class="carousel-item " data-bs-interval="3000">
-              <img src="https://cdn.zoomg.ir/2021/1/spider-man-far-from-home-mysterio-inside-illusion-machine.jpg" class="d-block carosello-home img-fluid w-100 h-50 rounded-5" alt="https://picsum.photos/802">
-            </div>
-            
-            
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       </div>
-    </div>
-  </div>
+      {{-- Fine Carosello dispositivi grandi  --}}
 
-  {{-- Fine Carosello dispositivi grandi  --}}
-
-  {{-- carosello display piccoli  --}}
-  <div class="container- d-md-none">
-    <div class="row">
-      <div class="col-12">
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner carousel-inner ">
-            <div class="carousel-item active" data-bs-interval="3000">
-              <img src="https://cdn.mos.cms.futurecdn.net/8E6totXLziTcHNNtStGadb.jpg" class="d-block immagini-carosello carosello-home w-100 h-100 rounded-5 " alt="https://picsum.photos/800">
+      {{-- carosello display piccoli  --}}
+      <div class="container d-md-none">
+        <div class="row">
+          <div class="col-12">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner carousel-inner ">
+                <div class="carousel-item active" data-bs-interval="3000">
+                  <img src="https://cdn.mos.cms.futurecdn.net/8E6totXLziTcHNNtStGadb.jpg" class="d-block immagini-carosello carosello-home w-100 h-100 rounded-5 " alt="https://picsum.photos/800">
+                </div>
+                <div class="carousel-item " data-bs-interval="3000">
+                  <img src="https://www.dexerto.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://editors.dexerto.com/wp-content/uploads/2022/11/28/cm-aorus.jpg" class="d-block carosello-home w-100 h-100 rounded-5" alt="https://picsum.photos/801">
+                </div>
+                <div class="carousel-item " data-bs-interval="3000">
+                  <img src="https://cdn.zoomg.ir/2021/1/spider-man-far-from-home-mysterio-inside-illusion-machine.jpg" class="d-block carosello-home w-100 h-100 rounded-5" alt="https://picsum.photos/802">
+                </div>
+                
+                
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <div class="carousel-item " data-bs-interval="3000">
-              <img src="https://www.dexerto.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://editors.dexerto.com/wp-content/uploads/2022/11/28/cm-aorus.jpg" class="d-block carosello-home w-100 h-100 rounded-5" alt="https://picsum.photos/801">
-            </div>
-            <div class="carousel-item " data-bs-interval="3000">
-              <img src="https://cdn.zoomg.ir/2021/1/spider-man-far-from-home-mysterio-inside-illusion-machine.jpg" class="d-block carosello-home w-100 h-100 rounded-5" alt="https://picsum.photos/802">
-            </div>
-            
-            
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       </div>
-    </div>
-  </div>
   
-  {{-- fine carosello display piccoli  --}}
+      {{-- fine carosello display piccoli  --}}
   
-  {{-- Categorie dispositivi grandi  d-md-block --}}
-  <div class=" container d-none d-md-block mb-5 box-prodotti bg-body-tertiary p-2 shadow rounded-5 justify-content-center mt-5 ">
-    <div class="row m-5 justify-content-evenly ">
-      <div class="col-12">
-        <h1 class="text-center font-h1 mb-5 display-4 ">{{__('ui.categorie')}}</h1>
+      {{-- Categorie dispositivi grandi  d-md-block --}}
+      <div class=" container d-none d-md-block mb-5 box-prodotti bg-body-tertiary p-2 shadow rounded-5 justify-content-center mt-5 ">
+        <div class="row m-5 justify-content-evenly ">
+          <div class="col-12">
+            <h1 class="text-center font-h1 mb-5 display-4 ">{{__('ui.categorie')}}</h1>
+          </div>
+          
+            @foreach ($categories as $category)
+            <div class="col-6 col-md-2 me-md-1">
+            <div data-aos-offset="300" data-aos-easing="ease-in-sine">
+              <div class="m-3 " >
+                <img src="{{$category->img}}" class="categorie-bordo card-img-top hvr-float-shadow rounded-circle"  alt="immagini">
+                <div class="card-body">
+                  <a class="nav-link text-body-secondary m-4 fs-3 hvr-float-shadow justify-content-center d-flex text-center" href="{{route('categoryShow', compact('category'))}}">{{$category->name}}</a>
+                </div>
+              </div>                 
+            </div> 
+          </div> 
+            @endforeach
+        </div>
       </div>
-      
-        @foreach ($categories as $category)
-        <div class="col-6 col-md-2 me-md-1">
-        <div data-aos-offset="300" data-aos-easing="ease-in-sine">
-          <div class="m-3 " >
-            <img src="{{$category->img}}" class="categorie-bordo card-img-top hvr-float-shadow rounded-circle"  alt="immagini">
-            <div class="card-body">
-              <a class="nav-link text-body-secondary m-4 fs-3 hvr-float-shadow justify-content-center d-flex text-center" href="{{route('categoryShow', compact('category'))}}">{{$category->name}}</a>
-            </div>
-          </div>                 
-        </div> 
-      </div> 
-        @endforeach
-    </div>
-  </div>
-  {{-- fine Categorie Dispositivi grandi --}}
+      {{-- fine Categorie Dispositivi grandi --}}
 
-  {{-- carosello dispositivi piccoli  --}}
-  <div class="container d-md-none mb-5 bg-card shadow rounded-5 justify-content-center" style="margin-top: 110px" data-aos="fade-right"
-  data-aos-offset="300"
-  data-aos-easing="ease-in-sine">
-<div class="row m-5 ">
-<div class="col-12">
-  <h1 class="text-center font-h2 text-white mb-5 ">{{__('ui.categorie')}}</h1>
-</div>
-  <div class="col-12">
-    <div id="carouselExample" class="carousel slide">
-      <div class="carousel-inner ">
-        @foreach ($categories as $category)
-        <div class="carousel-item @if($loop->first) active @endif" >
-          <img src="{{$category->img}}" class=" categorie-bordo-phone fs-5 card-img-top rounded-5 " alt="immagini">
-          <div class="card-body">
-            <a class="btn-bordo m-4 fs-3 btn hvr-float-shadow btn-warning justify-content-center d-flex text-center" href="{{route('categoryShow', compact('category'))}}">{{$category->name}}</a>
+      {{-- Inizio Categorie Dispositivi Piccoli --}}
+        <div class="container d-md-none mb-5 bg-card shadow rounded-5 justify-content-center" style="margin-top: 110px" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div class="row m-5 ">
+            <div class="col-12">
+              <h1 class="text-center font-h2 text-white mb-5 ">{{__('ui.categorie')}}</h1>
+            </div>
+              <div class="col-12">
+                <div id="carouselExample" class="carousel slide">
+                  <div class="carousel-inner ">
+                    @foreach ($categories as $category)
+                      <div class="carousel-item @if($loop->first) active @endif" >
+                        <img src="{{$category->img}}" class=" categorie-bordo-phone fs-5 card-img-top rounded-5 " alt="immagini">
+                        <div class="card-body">
+                          <a class="btn-bordo m-4 fs-3 btn hvr-float-shadow btn-warning justify-content-center d-flex text-center" href="{{route('categoryShow', compact('category'))}}">{{$category->name}}</a>
+                        </div>
+                      </div>      
+                    @endforeach 
+                  </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                </div>
+              </div>
+            </div>  
           </div>
         </div>
-        
-        @endforeach 
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </div>
-</div>  
-</div>
-{{-- fine Categorie dispositivi piccoli  --}}
-{{-- FINE CAROSELLO --}}
+      {{-- fine Categorie dispositivi piccoli  --}}
 
 {{-- INSERIMENTO CARD --}}
 

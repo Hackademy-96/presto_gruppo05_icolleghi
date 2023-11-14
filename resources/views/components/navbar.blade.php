@@ -114,18 +114,95 @@
         </div>
       </div>
     </div>
-  </div>
-  </nav>
-
+    
+    <li class="nav-item ms-3" data-bs-toggle="tooltip" data-bs-placement="bottom" data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine" data-bs-title="Crea Post">
+    <a class="nav-link hvr-underline-from-left text-white active" href="{{route('create_article')}}"><i class="bi fs-4 bi-plus-square"></i></a>
+  </li>
   
-  <div class="container mb-5 search-design  p-3 bg-body-secondary rounded-5 " style="margin-top: 100px;">
-    <div class="row">
-      <div class="col-md-12 ">
-        <form action="{{route('articles_search')}}" method="GET" class="d-flex" role="search">
-          <input name="searched" class="form-control  me-2" type="search" placeholder="{{__('ui.ricerca')}}" aria-label="Search">
-          <button class="btn btn-warning " type="submit"><i class="bi bi-search"></i></button>
-        </form>
-      </div>
+  <div class="dropdown ms-3"data-bs-toggle="tooltip" data-bs-placement="bottom" data-aos="fade-right"
+  data-aos-offset="300"
+  data-aos-easing="ease-in-sine" data-bs-title="Lingue">
+  
+  <button class="nav-link hvr-underline-from-left dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="bi fs-4 text-white bi bi-globe2"></i>
+  </button>
+  <ul class="dropdown-menu">
+    <li>
+      <a class="dropdown-item" href="#">
+        <x-_locale lang="it"> </x-_locale>ITA
+      </a>
+    </li>
+    <li>
+      <a class="dropdown-item" href="#">
+        <x-_locale lang="en"></x-_locale>ENG
+      </a>
+    </li>
+    <li>
+      <a class="dropdown-item" href="#">
+        <x-_locale lang="es"></x-_locale>ESP
+      </a>
+    </li>
+  </ul>
+</ul>
+</div>
+@guest
+
+  <ul class="navbar-nav mb-2  mb-lg-0">
+    <li class="nav-item">
+      <a class="nav-link hvr-underline-from-left text-white active" aria-current="page" href="{{route('register')}}">{{__('ui.registratinav')}}</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link hvr-underline-from-left text-white active" aria-current="page" href="{{route('login')}}">{{__('ui.accedinav')}}</a>
+    </li>
+  </ul>
+  @endguest
+  @auth
+  <ul class="navbar-nav  mb-2 mb-lg-0">
+    <li class="nav-item  dropdown">
+      <a class="nav-link hvr-underline-from-left text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Ciao {{Auth::user()->name}}
+      </a>
+      <ul class="dropdown-menu">
+        {{-- Revisore --}}
+        @if (Auth::user()->is_revisor)
+        <li class="nav-item">
+          <a class="text-center  btn btn-dark  bottone-logout " href="{{route('indexRevisor')}}">
+            Zona revisore
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{App\Models\Article::toBeRevisionedCount()}}</span>
+          </a>
+        </li>
+        @endif
+        
+        
+        
+        <li class="nav-item">
+          <form method="POST" class="justify-content-center d-flex" action="{{route('logout')}}">
+            @csrf
+            <button  class=" btn  bottone-logout text-center ">Logout  <i class="fa-solid fa-right-from-bracket fa-beat"></i></button>
+          </form>
+        </li>
+      </ul>
+    </li>
+    @endauth
+  </ul>
+
+
+
+</div>
+</div>
+
+</nav>
+
+
+<div class="container mb-5 search-design  p-3 bg-body-secondary rounded-5 " style="margin-top: 100px;">
+  <div class="row">
+    <div class="col-md-12 ">
+      <form action="{{route('articles_search')}}" method="GET" class="d-flex" role="search">
+        <input name="searched" class="form-control  me-2" type="search" placeholder="{{__('ui.ricerca')}}" aria-label="Search">
+        <button class="btn btn-warning " type="submit"><i class="bi bi-search"></i></button>
+      </form>
     </div>
   </div>
-  
+</div>
