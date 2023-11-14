@@ -163,7 +163,7 @@
         @empty
         <div class="col-md-8 col-lg-8 col-xl-8 mx-auto mb-4">
             <div class="alert alert-warning py-3 shadow">
-              <p class="lead">Ancora Nessun Annuncio Creato</p>
+              <p class="lead">{{__('ui.nessunannuncio')}}</p>
             </div>
         </div>
       @endforelse

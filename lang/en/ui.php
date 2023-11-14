@@ -47,6 +47,7 @@ return [
     'insp'=>'Enter the price',
     'frigoriferi'=>'fridge',
     'Profilo'=>'Profile',
+    'nessunannuncio'=>'No ads have been created yet',
     
 
     

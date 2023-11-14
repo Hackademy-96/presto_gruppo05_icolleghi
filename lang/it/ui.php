@@ -47,6 +47,7 @@ return [
     'insp'=>'Inserisci il prezzo',
     'Frigoriferi'=>'Frigoriferi',
     'Profilo'=>'Profilo',
+    'nessunannuncio'=>'Ancora Nessun Annuncio Creato',
 
 
 
