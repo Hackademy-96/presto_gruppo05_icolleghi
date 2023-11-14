@@ -16,8 +16,8 @@
     @if($article_to_check)
     <div class="container">
         <div class="row">
-            <div class="col-12">
-                <div id="carouselExampleIndicators" class="carousel slide" >
+                <div class="col-12 col-md-6">
+                  <div id="carouselExampleIndicators" class="carousel slide" >
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -54,6 +54,16 @@
                     </button>
                   </div>
                   
+                </div>
+                <div class="col-md-3">
+                  <div class="card-body">
+                    <h5>Revisione Immagini</h5>
+                    <p>Adulti: <span class="{{$image->adult}}"></span></p>
+                    <p>Satira: <span class="{{$image->spoof}}"></span></p>
+                    <p>Medicina: <span class="{{$image->medical}}"></span></p>
+                    <p>Violenza: <span class="{{$image->violence}}"></span></p>
+                    <p>Contenuto Ammiccante: <span class="{{$image->racy}}"></span></p>
+                  </div>
                 </div>
               </div>
               <div class="container justify-content-center d-flex mt-5 mb-4 p-3 bg-black text-white shadow rounded-5">
