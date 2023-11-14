@@ -28,7 +28,7 @@
                     @csrf
                     <div class="mb-3">
                       <label for="titolo text-white" class="form-label text-white">{{__('ui.titolocf')}}</label>
-                      <input type="text" wire:model.live={{__('ui.titolocf')}} placeholder={{__('ui.inst')}} class="form-control" id="titolo">
+                      <input type="text" wire:model.live='titolo' placeholder={{__('ui.inst')}} class="form-control" id="titolo">
                     </div>
                     <div class="mb-3">
                         <label for="disabledSelect" class="form-labe text-white ">{{__('ui.categoria')}}</label>

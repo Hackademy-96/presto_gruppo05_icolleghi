@@ -6,7 +6,7 @@
   @endif
   
 
- 
+
 
       {{-- carosello dispositivi grandi  --}}
       <div class="container d-none d-md-block">

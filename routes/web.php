@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\PublicController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\RevisorController;
@@ -51,5 +52,8 @@ Route::get('/ricerca/annuncio', [PublicController::class, 'searchArticles'])->na
 
 // cambia lingua 
 Route::get('/lingua/{lang}', [PublicController::class, 'setLanguage'])->name('setLocale');
+
+// pagina profilo
+Route::get('/profilo/{user}', [UserController::class, 'user_page'])->name('user_page');
 
 
