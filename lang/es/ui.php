@@ -42,6 +42,10 @@ return [
     'noreg'=>'Todavía no estas registrado?',
     'sireg'=>'regístrate',
     'creann'=>'Crea tu anuncio:',
+    'inst'=>'Ingrese el título',
+    'sdesc'=>'Escribe una breve descripción',
+    'insp'=>'Introduce el precio',
+    
 
 
 

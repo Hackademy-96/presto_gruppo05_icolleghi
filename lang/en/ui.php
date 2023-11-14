@@ -42,6 +42,10 @@ return [
     'noreg'=>'Not registered yet?',
     'sireg'=>'Sign in',
     'creann'=>'Create Your Ad:',
+    'inst'=>'Insert Title',
+    'sdesc'=>'Write a short description',
+    'insp'=>'Enter the price',
+    
 
     
 

@@ -28,7 +28,7 @@
                     @csrf
                     <div class="mb-3">
                       <label for="titolo text-white" class="form-label text-white">{{__('ui.titolocf')}}</label>
-                      <input type="text" wire:model.live="titolo" placeholder="Inserisci Titolo" class="form-control" id="titolo">
+                      <input type="text" wire:model.live={{__('ui.titolocf')}} placeholder={{__('ui.inst')}} class="form-control" id="titolo">
                     </div>
                     <div class="mb-3">
                         <label for="disabledSelect" class="form-labe text-white ">{{__('ui.categoria')}}</label>
@@ -42,11 +42,11 @@
                       </div>
                     <div class="mb-3">
                       <label for="descrizione" class="form-label text-white">{{__('ui.descrizione')}}</label>
-                      <input type="text" wire:model.live="descrizione" placeholder="Scrivi una breve Descrizione" class="form-control" id="descrizione">
+                      <input type="text" wire:model.live="descrizione" placeholder= "{{__('ui.sdesc')}}" class="form-control" id="descrizione">
                     </div>
                     <div class="mb-3">
                         <label for="prezzo" class=" text-white">{{__('ui.prezzo')}}</label>
-                        <input type="number" wire:model.live="prezzo" class="form-control" placeholder="Inserisci il prezzo" id="prezzo" >
+                        <input type="number" wire:model.live="prezzo" class="form-control" placeholder="{{__('ui.insp')}}" id="prezzo" >
                     </div>
                     <div class="mb-3">
                         <label class="text-white" for="text">{{__('ui.scegliimmagine')}}</label>

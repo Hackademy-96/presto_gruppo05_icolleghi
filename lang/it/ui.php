@@ -42,7 +42,10 @@ return [
     'noreg'=>'Non sei ancora Registrato?',
     'sireg'=>'Registrati',
     'creann'=>'Crea il Tuo Annuncio:',
-    
+    'inst'=>'Inserisci Titolo',
+    'sdesc'=>'Scrivi una breve Descrizione',
+    'insp'=>'Inserisci il prezzo',
+
 
 
 

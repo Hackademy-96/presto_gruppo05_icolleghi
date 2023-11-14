@@ -17,13 +17,13 @@
 
     <li class="nav-item ms-3"data-bs-toggle="tooltip" data-bs-placement="bottom" data-aos="fade-right"
     data-aos-offset="300"
-    data-aos-easing="ease-in-sine" data-bs-title="Tutti i Post">
+    data-aos-easing="ease-in-sine" data-bs-title="{{__('ui.tuttiipost')}}">
     <a class="nav-link hvr-underline-from-left text-white active" href="{{route('indexArticle')}}"><i class="bi fs-4 bi-file-post"></i></a>
   </li>
 
   <div class="dropdown"data-bs-toggle="tooltip" data-bs-placement="bottom" data-aos="fade-right"
   data-aos-offset="300"
-  data-aos-easing="ease-in-sine" data-bs-title="Categorie">
+  data-aos-easing="ease-in-sine" data-bs-title="{{__('ui.categhover')}}">
   <li class="nav-item ms-3 dropdown">
     <a class="nav-link hvr-underline-from-left dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="bi fs-4 text-white bi-three-dots"></i>
@@ -38,13 +38,13 @@
 
   <li class="nav-item ms-3" data-bs-toggle="tooltip" data-bs-placement="bottom" data-aos="fade-right"
   data-aos-offset="300"
-  data-aos-easing="ease-in-sine" data-bs-title="Crea Post">
+  data-aos-easing="ease-in-sine" data-bs-title="{{__('ui.posthover')}}">
   <a class="nav-link hvr-underline-from-left text-white active" href="{{route('create_article')}}"><i class="bi fs-4 bi-plus-square"></i></a>
 </li>
 
 <div class="dropdown ms-3"data-bs-toggle="tooltip" data-bs-placement="bottom" data-aos="fade-right"
 data-aos-offset="300"
-data-aos-easing="ease-in-sine" data-bs-title="Lingue">
+data-aos-easing="ease-in-sine" data-bs-title="{{__('ui.lingue')}}">
 
 <button class="nav-link hvr-underline-from-left dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
   <i class="bi fs-4 text-white bi bi-globe2"></i>
@@ -83,14 +83,14 @@ data-aos-easing="ease-in-sine" data-bs-title="Lingue">
 <ul class="navbar-nav  mb-2 mb-lg-0">
   <li class="nav-item  dropdown">
     <a class="nav-link hvr-underline-from-left text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-      Ciao {{Auth::user()->name}}
+      {{__('ui.ciao')}} {{Auth::user()->name}}
     </a>
     <ul class="dropdown-menu">
       {{-- Revisore --}}
       @if (Auth::user()->is_revisor)
       <li class="nav-item">
         <a class="text-center  btn btn-dark  bottone-logout " href="{{route('indexRevisor')}}">
-          Zona revisore
+          "{{__('ui.zonarevisore')}}"
           <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{App\Models\Article::toBeRevisionedCount()}}</span>
         </a>
       </li>
@@ -101,7 +101,7 @@ data-aos-easing="ease-in-sine" data-bs-title="Lingue">
       <li class="nav-item">
         <form method="POST" class="justify-content-center d-flex" action="{{route('logout')}}">
           @csrf
-          <button  class=" btn  bottone-logout text-center ">Logout  <i class="fa-solid fa-right-from-bracket fa-beat"></i></button>
+          <button  class=" btn  bottone-logout text-center ">"{{__('ui.logout')}}  <i class="fa-solid fa-right-from-bracket fa-beat"></i></button>
         </form>
       </li>
     </ul>
