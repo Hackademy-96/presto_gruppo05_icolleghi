@@ -18,10 +18,10 @@
                   <img src="https://cdn.mos.cms.futurecdn.net/8E6totXLziTcHNNtStGadb.jpg" class="d-block immagini-carosello carosello-home img-fluid w-100 h-50 rounded-5 " alt="https://picsum.photos/800">
                 </div>
                 <div class="carousel-item " data-bs-interval="3000">
-                  <img src="https://www.dexerto.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://editors.dexerto.com/wp-content/uploads/2022/11/28/cm-aorus.jpg" class="d-block carosello-home img-fluid w-100 h-50 rounded-5" alt="https://picsum.photos/801">
+                  <img src="https://assets-prd.ignimgs.com/2022/11/26/amazon-buy-2-get-1-free-deal-ign-cyber-monday-2022-1669465169940.png" class="d-block carosello-home img-fluid w-100 h-50 rounded-5" alt="https://picsum.photos/801">
                 </div>
                 <div class="carousel-item " data-bs-interval="3000">
-                  <img src="https://cdn.zoomg.ir/2021/1/spider-man-far-from-home-mysterio-inside-illusion-machine.jpg" class="d-block carosello-home img-fluid w-100 h-50 rounded-5" alt="https://picsum.photos/802">
+                  <img src="https://hd2.tudocdn.net/971566?w=1920" class="d-block carosello-home img-fluid w-100 h-50 rounded-5" alt="https://picsum.photos/802">
                 </div>
                 
                 
@@ -84,7 +84,7 @@
             <div class="col-6 col-md-2 me-md-1">
             <div data-aos-offset="300" data-aos-easing="ease-in-sine">
               <div class="m-3 " >
-                <img src="{{$category->img}}" class="categorie-bordo card-img-top hvr-float-shadow rounded-circle"  alt="immagini">
+               <a href="{{route('categoryShow', compact('category'))}}"><img src="{{$category->img}}"data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="categorie-bordo bg-body-secondary card-img-top hvr-float-shadow"  alt="immagini"></a> 
                 <div class="card-body">
                   <a class="nav-link text-body-secondary m-4 fs-3 hvr-float-shadow justify-content-center d-flex text-center" href="{{route('categoryShow', compact('category'))}}">{{$category->name}}</a>
                 </div>
