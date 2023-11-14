@@ -11,12 +11,12 @@
     {{-- LOGIN PROVA --}}
      <div class="container rounded-5 w-75 justify-content-center d-flex shadow bg-body-secondary ">
         <div class="row mt-3 justify-content-center mb-5 ">
-            <h2 class=" display-4 text-center"><strong>Accedi</strong> </h2>
+            <h2 class=" display-4 text-center"><strong>{{__('ui.accedinav')}}</strong> </h2>
             <div class="col-md-8 col-lg-8 col-xl-8 mx-auto mb-4 ">
                 <form method="POST" action="{{route('login')}}">
                     @csrf
                     <div class="col-md-8 col-lg-8 col-xl-8 mx-auto mb-4 ">
-                        <label for="email" class="form-label">Indirizzo E-Mail</label>
+                        <label for="email" class="form-label">E-Mail</label>
                         <input placeholder="Inserisci e-mail" type="email" name="email" class="form-control" id="email">
                     </div>
                     <div class="col-md-8 col-lg-8 col-xl-8 mx-auto mb-4 ">
@@ -38,8 +38,8 @@
         <div class="row">
             <div class="col-12 mb-5 justify-content-center d-flex">    
                 <div class="justify-content-center d-flex flex-column">
-                    <h3 class="text-white mb-4">Non sei ancora Registrato?</h3>
-                    <a href="{{route('register')}}" class="btn btn-warning">Registrati</a>
+                    <h3 class="text-white mb-4">{{__('ui.noreg')}}</h3>
+                    <a href="{{route('register')}}" class="btn btn-warning">{{__('ui.sireg')}}</a>
                 </div>
             </div>
         </div>

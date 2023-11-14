@@ -25,6 +25,24 @@ return [
     'accedilog'=>'Log in',
     'zonarevisore'=>'Reviewer area',
     'titolocf'=>'Title',
+    'tuttiipost'=>'all posts',
+    'categhover'=>'Categories',
+    'posthover'=>'Create post',
+    'lingue'=>'Languages',
+    'ciao'=>'Hi',
+    'categoria'=>'Category',
+    'scegcat'=>'Create a category',
+    'descrizione'=>'Descrizione',
+    'logout'=>'Log out',
+    'prezzo'=>'Price',
+    'scegliimmagine'=>'Choose image',
+    'anteprimaimg'=>'Preview image:',
+    'cancella'=>'Delete',
+    'creaannuncio'=>'Create ad',
+    'noreg'=>'Not registered yet?',
+    'sireg'=>'Sign in',
+    'creann'=>'Create Your Ad:',
+
     
 
 

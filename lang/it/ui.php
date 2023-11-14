@@ -25,6 +25,27 @@ return [
     'accedilog'=>'Accedi',
     'zonarevisore'=>'Zona revisore',
     'titolocf'=>'Titolo',
+    'tuttiipost'=>'Tutti i post',
+    'categhover'=>'Categorie',
+    'posthover'=>'Crea Post',
+    'lingue'=>'Lingue',
+    'ciao'=>'Ciao',
+    'categoria'=>'Categoria',
+    'scegcat'=>'Scegli una categoria',
+    'descrizione'=>'Descrizione',
+    'logout'=>'Disconnetti',
+    'prezzo'=>'Prezzo',
+    'scegliimmagine'=>'Scegli immagine',
+    'anteprimaimg'=>'Anteprima immagine:',
+    'cancella'=>'Cancella',
+    'creaannuncio'=>'Crea annuncio',
+    'noreg'=>'Non sei ancora Registrato?',
+    'sireg'=>'Registrati',
+    'creann'=>'Crea il Tuo Annuncio:',
+    
+
+
+
     
     
 

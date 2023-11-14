@@ -24,7 +24,27 @@ return [
     'disclaimer'=>'Al acceder a tu cuenta declaras haber leído y aceptado nuestras Condiciones Generales de Uso y Venta. Revise nuestra Política de privacidad, nuestra Política de cookies y nuestra Política de publicidad basada en intereses.',
     'accedilog'=>'Acceso',
     'zonarevisore'=>'Área de auditores',
-    'titolocf'=>'título',
+    'titolocf'=>'Título',
+    'tuttiipost'=>'Todos los mensajes',
+    'categhover'=>'Categorias',
+    'posthover'=>'Crear publicaciones',
+    'lingue'=>'Idiomas',
+    'ciao'=>'Hola',
+    'categoria'=>'Categoría',
+    'scegcat'=>'Elige una categoría',
+    'descrizione'=>'Descripción',
+    'logout'=>'Cerrar sesión',
+    'prezzo'=>'Precio',
+    'scegliimmagine'=>'Elige imagen',
+    'anteprimaimg'=>'Imagen previa:',
+    'cancella'=>'Borrar',
+    'creaannuncio'=>'Crear anuncio',
+    'noreg'=>'Todavía no estas registrado?',
+    'sireg'=>'regístrate',
+    'creann'=>'Crea tu anuncio:',
+
+
+
 
 
 
