@@ -47,10 +47,15 @@
 }
 
 body{
-    background-color: silver;
+    /* background-color:  rgba(255, 193, 9, 0.334); */
+    background-color: rgba(128, 128, 128, 0.781);
+  
+   
+   
 }
 footer{
     background-color: lightgray;
+    
 }
 
 /* MODIFICA NAVBAR */
@@ -92,10 +97,15 @@ footer{
   object-fit:cover;
 }
 /* MODIFICA CARD */
-.card{
+.img-size{
+  height: 190px;
+  /* width: 100%; */
+  object-fit: cover;
+}
+/* .card{
     object-fit: cover;
    
-}
+} */
 /* MODIFICA CATEGORIE */
 .categorie-bordo{
     padding:2px;

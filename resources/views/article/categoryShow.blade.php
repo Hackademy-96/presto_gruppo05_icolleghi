@@ -8,12 +8,12 @@
   
   
   
-    <div class="container justify-content-center d-flex mt-3">
-        <div class="row m-5 ">
+    <div class="container mt-3 ">
+        <div class="row m-5 justify-content-center ">
             @forelse ($category->articles as $article)
-              <div class="col-12 col-md-4">
-                  <div class="card card " style="width: 18rem;">
-                      <img src="{{!$article->images()->get()->isEmpty() ? Storage::url($article->images()->first()->path) : '/img/colleghi.jpg'}}" class="card-img-top" alt="immagini">
+              <div class="col-12 col-md-3">
+                  <div class="card">
+                      <img src="{{!$article->images()->get()->isEmpty() ? Storage::url($article->images()->first()->path) : '/img/colleghi.jpg'}}" class="card-img-top img-size" alt="immagini">
                       <div class="card-body">
                         <h5 class="card-title">{{$article->titolo}}</h5>
                         <p class="card-text">{{$article->prezzo}}€</p>

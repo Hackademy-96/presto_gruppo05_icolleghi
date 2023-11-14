@@ -88,8 +88,8 @@ data-aos-easing="ease-in-sine" data-bs-title="{{__('ui.lingue')}}">
     <ul class="dropdown-menu">
       {{-- Revisore --}}
       @if (Auth::user()->is_revisor)
-      <li class="nav-item">
-        <a class="text-center  btn btn-dark  bottone-logout " href="{{route('indexRevisor')}}">
+      <li class="d-flex justify-content-center m-2">
+        <a class=" btn  bottone-logout text-center btn-dark" href="{{route('indexRevisor')}}">
           "{{__('ui.zonarevisore')}}"
           <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{App\Models\Article::toBeRevisionedCount()}}</span>
         </a>
@@ -99,7 +99,7 @@ data-aos-easing="ease-in-sine" data-bs-title="{{__('ui.lingue')}}">
 
 
       <li class="nav-item">
-        <form method="POST" class="justify-content-center d-flex" action="{{route('logout')}}">
+        <form method="POST" class="justify-content-center d-flex btn-dark" action="{{route('logout')}}">
           @csrf
           <button  class=" btn  bottone-logout text-center ">"{{__('ui.logout')}}  <i class="fa-solid fa-right-from-bracket fa-beat"></i></button>
         </form>

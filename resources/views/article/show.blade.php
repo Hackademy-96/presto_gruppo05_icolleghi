@@ -14,7 +14,7 @@
                     <p><a class="btn btn-success" href="{{route('categoryShow',['category'=>$article->category])}}"> {{$article->category->name}}</a></p></p>
                     <p><strong>Descrizione prodotto:</strong> </p>
                     <p> {{$article->descrizione}}</p>
-                    <p class="bottone-offerta">Sconto</p>
+                    <p class="bottone-offerta">Prezzo</p>
                     <p>{{$article->prezzo}}€</p>
                 </div>
             </div>
