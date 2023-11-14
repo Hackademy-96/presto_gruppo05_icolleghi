@@ -83,6 +83,10 @@ footer{
     border: 1px solid rgb(35, 46, 62);
     box-shadow: 5px 5px 5px rgb(35, 46, 62);
 }
+.btn-revisore{
+  background-color: rgb(35, 46, 62) !important ;
+
+}
 /* MODIFICA TITLE */
 .immagini-carosello{
   object-fit:cover;
