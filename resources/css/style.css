@@ -176,6 +176,10 @@ footer{
     color: white;
 }
 /* Swiper  */
+.customize{
+  background-color: rgb(35, 46, 62) ;
+}
+
 .swiper {
     width: 600px;
     height: 300px;
