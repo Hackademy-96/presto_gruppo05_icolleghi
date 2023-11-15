@@ -10,10 +10,10 @@
       
       
   {{-- Profilo  --}}
-      <div class="container shadow bg-card mt-4 p-4 rounded-5 text-white">
+      <div class="container d-none d-md-block shadow bg-card mt-4 p-4 rounded-5 text-white">
         <div class="row justify-content-center">
           <div class="col-4 justify-content-center d-flex">
-            <img class="rounded-5" src="https://picsum.photos/200" alt="">
+            <img class="rounded-5" height="300px" src="https://cdn-icons-png.flaticon.com/512/17/17004.png" alt="">
           </div>
             <div class="col-4 fs-3">
               <a href="" class="me-4 text-reset">
@@ -45,6 +45,33 @@
             </div> 
         </div>
       </div>
+
+      {{-- dispositivi Piccoli  --}}
+      <div class="d-md-none">
+        <div class="container  shadow bg-card mt-4 p-4 rounded-5 text-white">
+        <div class="row justify-content-center">
+          <div class="col-4 justify-content-center d-flex">
+            <img class="rounded-5" height="150px" src="https://cdn-icons-png.flaticon.com/512/17/17004.png" alt="">
+          </div>
+        </div>
+      </div>
+          <div class="container shadow bg-card mt-4 p-4 rounded-5 text-white">
+            <div class="row justify-content-center">
+              <div class="col-4 ">
+              <h3>I Tuoi Dati:</h3>
+              <hr>
+              <h4>Nome:</h4>
+              <p>{{Auth::user()->name}}</p>
+              <h4>E-Mail</h4>
+              <p>{{Auth::user()->email}}</p>
+            </div> 
+            </div>
+          </div>
+      </div>
+      
+            
+        
+
 
   {{-- Annunci Creati  --}}
     <div class="container shadow bg-white rounded-5">

@@ -20,16 +20,16 @@ return new class extends Migration
             $table->timestamps();
         });
         $categories=[
-        ['name'=>'Smartphone', 'img'=>'/img/Smartphone.jpg'], 
-        ['name'=>'Pc', 'img'=>'/img/Pc.jpg'], 
-        ['name'=>'Console', 'img'=>'/img/Console.jpg'] , 
-        ['name'=>'Tv', 'img'=>'/img/Tv.avif'], 
-        ['name'=>'Soundbar', 'img'=>'/img/Soundbar.webp'], 
-        ['name'=>'Frigoriferi', 'img'=>'/img/Frigorifero.avif'],
-        ['name'=>'Modem', 'img'=>'/img/Modem.jpg'], 
-        ['name'=>'Tablet', 'img'=>'/img/Tablet.png'] ,
-        ['name'=>'Webcam', 'img'=>'/img/Webcam.jpg'], 
-        ['name'=>'Macchine Fotografiche', 'img'=>'/img/Fotocamera.webp'],
+        ['name'=>'Smartphone', 'img'=>'/img/smartphone.webp'], 
+        ['name'=>'Pc', 'img'=>'/img/pc.png'], 
+        ['name'=>'Console', 'img'=>'/img/console.png'] , 
+        ['name'=>'Tv', 'img'=>'/img/tv.webp'], 
+        ['name'=>'Soundbar', 'img'=>'/img/saundbar.png'], 
+        ['name'=>'Frigoriferi', 'img'=>'/img/frigorifero.png'],
+        ['name'=>'Modem', 'img'=>'/img/modem.png'], 
+        ['name'=>'Tablet', 'img'=>'/img/tablet.png'] ,
+        ['name'=>'Webcam', 'img'=>'/img/webcam.png'], 
+        ['name'=>'Macchine Fotografiche', 'img'=>'/img/fotocamera.png'],
     ];
         foreach($categories as $category){
             Category::create([
