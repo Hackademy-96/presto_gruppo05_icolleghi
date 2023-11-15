@@ -59,7 +59,7 @@ data-aos-easing="ease-in-sine">
             <h6 class="text-uppercase fw-bold mb-4"data-aos="fade-right"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine">
-              <i  class="fas fa-gem me-3"></i>iColleghi®
+              <i  class="fas fa-gem me-3"></i>Presto.it®
             </h6>
             <p data-aos="fade-right"
      data-aos-offset="300"
